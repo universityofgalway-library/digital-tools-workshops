@@ -15,7 +15,7 @@ This is how working with regular expressions looks in Notepad++ \(to access this
 * **\|** - _either_ everything on the left, _or_ what's on the right
 * **\(\)** - grouping of characters \(if in doubt about whether to use them, it's better to use them :\) 
 
-![](./assets/regex1.png)
+![](./img/regex1.png)
 
 The part of the regex enclosed in parentheses is called a **group**. Groups are numbered by the opening parenthesis.
 
@@ -23,7 +23,7 @@ The part of the regex enclosed in parentheses is called a **group**. Groups are 
 * **\[ \]** - any single character from those enclosed in brackets
 * **\[^ \]** - any single character except those enclosed in brackets
 
-![](./assets/r7.png)
+![](./img/r7.png)
 
 ### Quantitative Operators (Quantifiers)
 
