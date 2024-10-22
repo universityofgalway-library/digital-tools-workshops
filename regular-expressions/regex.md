@@ -1,4 +1,4 @@
-**Regular expressions** _\(regular expressions, regex\)_ are a formal language for searching and replacing substrings in text. With the help of regex, you can define a pattern and find or replace pieces of the text that match it. Many text editors such as Notepad++, Sublime, Geany, Atom etc., support regular expressions. 
+**Regular expressions** _\(regex\)_ are a formal language for searching and replacing substrings in text. With the help of regex, you can define a pattern and find or replace pieces of the text that match it. Many text editors such as Notepad++, Sublime, Geany, Atom etc., support regular expressions. 
 
 Websites:
 
