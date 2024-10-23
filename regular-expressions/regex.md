@@ -1,10 +1,33 @@
-## What is a regular expression?
+# Regular Expressions
 
 **Regular expressions** (shortened as **regex** or **regexp**) refer to a formal language for matching and replacing sequences of characters with specific patterns. Many text editors such as Google Docs, Notepad++, Sublime, Geany, Brackets, Atom, etc. support regular expressions. They can be very useful for validating, cleaning, and restructuring text data.
 
-A regular expression can be as simple as a single character or word, but it can sometimes turn into a wall of brackets. However scary regex may look at first glance, their syntax is not that complicated at all!
+## Turning on regex mode in a text editor
 
-<img src="./img/howto.jpg" alt="How To" style="height: 300px; margin-right: 100px;"/><img src="./img/brackets.jpg" alt="Brackets" style="height: 300px;"/>
+* Ctrl+F — search
+* Ctrl+H — replace
+
+### Notepad++
+
+<img src="./img/npp1.png" alt="Search" style="height: 300px; margin-right: 10px;"/>&nbsp;&nbsp;&nbsp;<img src="./img/npp2.png" alt="Replace" style="height: 300px;"/>
+
+### Sublime Text
+<img src="./img/sublime1.png" alt="Search" style="height: 350px; margin-right: 10px;"/>&nbsp;&nbsp;&nbsp;<img src="./img/sublime2.png" alt="Replace" style="height: 350px;"/>
+
+Alternatively, you can use https://regex101.com/ or any other online regex tester. These websites are great for learning, because they provide a detailed explanation for every bit of your regular expression.
+
+<img src="./img/regex101.png" alt="Search" style="height: 400px; margin-right: 10px;"/>
+
+## How does a regular expression look like?
+A regular expression can be as simple as a single character or word. 
+
+<img src="./img/char.png" style="height: 440px; margin-right: 10px;"/>
+
+<img src="./img/word.png" style="height: 300px; margin-right: 10px;"/>
+
+However, regular expressions more often look like something your cat typed jumping on the keyboard, or just like a wall of brackets. Although they may seem intimidating at first glance, their syntax is actually quite straightforward!
+
+<img src="./img/howto.jpg" alt="How To" style="height: 300px; margin-right: 10px;"/>&nbsp;&nbsp;&nbsp;<img src="./img/brackets.jpg" alt="Brackets" style="height: 300px;"/>
 
 ### Selecting and Grouping Symbols
 
