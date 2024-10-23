@@ -1,4 +1,4 @@
-**Regular expressions** _\(regex\)_ are a formal language for searching and replacing substrings in text. With the help of regex, you can define a pattern and find or replace pieces of the text that match it. Many text editors such as Notepad++, Sublime, Geany, Atom etc., support regular expressions. 
+**Regular expressions** _\(regex, regexp\)_ are a formal language for searching and replacing sequences of characters. With the help of regex, you can define a pattern and find or replace pieces of the text that match it. Many text editors such as Google Docs, Notepad++, Sublime, Geany, Brackets, Atom, etc., support regular expressions. 
 
 Websites:
 
@@ -77,3 +77,17 @@ Quantifiers by default behave greedily: this means that they try to "consume" as
 As you've already noticed, like any language, regular expressions are written using a special alphabet—dots, asterisks, parentheses, etc. But what if you need to find special characters like + or \* in the text? It's simple: you need to **escape** them by placing a backslash \ (backslash) before them. In this example, we escape \* to make it a literal text character, while + remains a special character and means "one or more times".
 
 ### Backreferences
+
+## Cheatsheets
+
+## Practice
+
+* https://regexcrossword.com/
+* https://regexone.com/
+
+## Documentation
+* [Regex in Google Docs](https://support.google.com/a/answer/1371415?hl=en)
+* [Regex in Python](https://docs.python.org/3/howto/regex.html)
+* [Regex in R](https://cran.r-project.org/web/packages/stringr/vignettes/regular-expressions.html)
+* [Regex in Java](https://docs.oracle.com/javase/tutorial/essential/regex/)
+* [Regex in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)
