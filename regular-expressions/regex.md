@@ -29,58 +29,66 @@ However, regular expressions more often look like something your cat typed jumpi
 
 <img src="./img/howto.jpg" alt="How To" style="height: 300px; margin-right: 10px;"/>&nbsp;&nbsp;&nbsp;<img src="./img/brackets.jpg" alt="Brackets" style="height: 300px;"/>
 
-### Selecting and Grouping Symbols
+## Regex Syntax
 
-* **.** - any character
-* **\|** - _either_ everything on the left, _or_ what's on the right
-* **\(\)** - grouping of characters \(if in doubt about whether to use them, it's better to use them :\) 
+## Symbol ranges
 
-![](./img/regex1.png)
+| Syntax   | Description                                    |
+|:-----------|:------------------------------------------------|
+| **.**     | any single character                           |
+| **A\|B**  | match either A (everything on the left) or B (everything on the right)
+| **[ABC]**             | any single character from those in brackets           |
+| **[^ABC]**            | any single character except those enclosed in brackets     
+| **[A-Z]**     | any single uppercase [basic Latin](https://en.wikipedia.org/wiki/Basic_Latin_(Unicode_block)) character        |
+| **[a-z]**     | any lowercase character (Latin alphabet)               |
+| **[0-9]** or **\d**| a digit                                         |
+| **[^0-9]** or **\D**| any character except a digit                    |
+ 
+You can combine ranges:
 
-The part of the regex enclosed in parentheses is called a **group**. Groups are numbered by the opening parenthesis.
+| Syntax   | Description                                    |
+|:-----------|:------------------------------------------------|
+| **[A-Za-z]**               | any uppercase or lowercase character from basic Latin alphabet                          |
+| **[A-Za-z0-9]**            | any uppercase or lowercase character from basic Latin alphabet, and digits               |
+| **[A-Za-z0-9_]** or **\w**| any uppercase or lowercase character from basic Latin alphabet, digits, and _            |
+| **[^A-Za-z0-9_]** or **\W**| anything except uppercase or lowercase characters (Latin alphabet), digits, and _ |
 
-* **\1** - group with the corresponding number \(used in replacement\)
-* **\[ \]** - any single character from those enclosed in brackets
-* **\[^ \]** - any single character except those enclosed in brackets
+**Tip**: regular expressions operate Unicode symbol ranges, and you can create custom ones using [Unicode blocks](https://www.compart.com/en/unicode/block) as reference.
+
+| Syntax   | Description                                    |
+|:-----------|:------------------------------------------------|
+| **[А-Я]**     | any uppercase character from basic Cyrillic alphabet           |
+| **[а-я]**     | any lowercase character from basic Cyrillic alphabet           |
+| **[\u1680-\u169c]** | Ogham alphabet |
+|**[\u0250-\u02af]**| International Phonetic Alphabet (IPA) |
+
+## Groups and backreferencing
+
+A part of a pattern can be enclosed in parentheses. This is called a **capturing group**. 
+
+| Syntax   | Description                                    |
+|:-----------|:------------------------------------------------|
+| **( )**                        | capturing group                                                                |
+| **(? )**                       | non-capturing (passive) group                                                   |
+| **\1**                         | group with the corresponding number     
+
+Groups are numbered by the opening parenthesis.
 
 ![](./img/r7.png)
 
-### Quantitative Operators (Quantifiers)
+## Quantifiers
 
-* **?** - the previous character/group may or may not be present
-* **+** - the previous character/group may repeat 1 or more times
-* **\*** - the previous character/group may repeat 0 or more times
-* **{n,m}** - the previous character/group may repeat from n to m times, inclusive
-* **{n,}** - the previous character/group in parentheses may repeat n or more times
-* **{,m}** - the previous character/group may repeat up to m times
-* **{n}** - the previous character/group repeats n times
+| Syntax   | Description                                    |
+|:-----------|:------------------------------------------------|
+| **?**                          | the previous character/group may or may not be present                         |
+| **+**                          | the previous character/group may repeat 1 or more times                        |
+| **\***                         | the previous character/group may repeat 0 or more times                        |
+| **{N,M}**                      | the previous character/group may repeat from N to M times, inclusive           |
+| **{N,}**                       | the previous character/group may repeat N or more times                        |
+| **{,M}**                       | the previous character/group may repeat from zero to M times                          |
+| **{N}**                        | the previous character/group repeats exactly N times 
 
-### Symbol Classes (Ranges)
-
-* **\[A-Z\]** - _any one_ uppercase character \(Latin alphabet\)
-* **\[a-z\]** - any lowercase character \(Latin alphabet\)
-* **\[А-Я\]** - any uppercase character \(Cyrillic alphabet\)
-* **\[а-я\]** - any lowercase character \(Cyrillic alphabet\)
-* **\[0-9\]** or **\d** - a digit
-* **\[^0-9\]** or **\D** - any character except a digit
-
-You can combine them:
-
-* **\[A-Za-z\]** - any uppercase or lowercase character \(Latin alphabet\)
-* **\[A-Za-z0-9\]** - any uppercase or lowercase character \(Latin alphabet\) and digits
-* **\[A-Za-z0-9\_\]** or **\w** - any uppercase or lowercase character \(Latin alphabet\), digits, and _
-* **\[^A-Za-z0-9\_\]** or **\W** - anything except uppercase or lowercase characters \(Latin alphabet\), digits, and _
-
-#### Special characters
-
-* **\t** - tab
-* **\s** - any whitespace character
-* **\S** - anything except spaces
-* **\n** \(or **\r\n** on Windows\) - new line
-* **^** - start of the line
-* **$** - end of the line
-
-### "Greedy" and "Lazy" Operators
+### "Greedy" and "lazy" quantifiers
 
 Quantifiers by default behave greedily: this means that they try to "consume" as many characters as possible and, out of all possible options, they will catch the longest string. 
 
@@ -92,11 +100,42 @@ Quantifiers by default behave greedily: this means that they try to "consume" as
 | {min, max}           | {min, max}?        |
 
 
-### Escaping Special Characters
+## Special characters
 
-As you've already noticed, like any language, regular expressions are written using a special alphabet—dots, asterisks, parentheses, etc. But what if you need to find special characters like + or \* in the text? It's simple: you need to **escape** them by placing a backslash \ (backslash) before them. In this example, we escape \* to make it a literal text character, while + remains a special character and means "one or more times".
+| Syntax   | Description                                    |
+|:-----------|:------------------------------------------------|
+| **\t**                         | tab                                                                            |
+| **\r**                         | carriage return                                                                |
+| **\n**                         | new line   
+| **\s**                         | any whitespace character                                                       |
+| **\S**                         | anything except spaces  
 
-### Backreferences
+### Anchors 
+
+| Syntax   | Description                                    |
+|:-----------|:------------------------------------------------|
+| **^**                          | start of the line                                                              |
+| **$**                          | end of the line    
+
+## Escaping syntax elements
+
+As you've already noticed, like any language, regular expressions are written using a special alphabet—dots, asterisks, parentheses, etc. But what if you need to find special characters like + or \* in the text? It's simple: you need to **escape** them by placing a backslash before them. In this example, we escape \* to make it a literal text character, while + remains a special character and means "one or more times".
+
+## Exercises 
+
+#### Exercise 1
+What will the following regex match? What do you have to change to capture phrases "I love regex!" and "I hate regex!"? Make another change for the regex to capture any of these phases with one or more exclamation marks.
+
+```
+I love|hate regex!
+```
+#### Exercise 2
+Using [Unicode blocks](https://www.compart.com/en/unicode/block), write a regex to match:
+
+* Devanagari alphabet
+* All Georgian characters (main + extended)
+* Greek alphabet + Ancient Greek numbers + Ancient Greek musical notation + Byzantine musical notation
+
 
 ## Cheatsheets
 
