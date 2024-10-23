@@ -1,6 +1,10 @@
-**Regular expressions** _\(regex, regexp\)_ are a formal language for searching and replacing sequences of characters. With the help of regex, you can define a pattern and find or replace pieces of the text that match it. Many text editors such as Google Docs, Notepad++, Sublime, Geany, Brackets, Atom, etc., support regular expressions. 
+## What is a regular expression?
 
+**Regular expressions** (shortened as **regex** or **regexp**) refer to a formal language for matching and replacing sequences of characters with specific patterns. Many text editors such as Google Docs, Notepad++, Sublime, Geany, Brackets, Atom, etc. support regular expressions. They can be very useful for validating, cleaning, and restructuring text data.
 
+A regular expression can be as simple as a single character or word, but it can sometimes turn into a wall of brackets. However scary regex may look at first glance, their syntax is not that complicated at all!
+
+<img src="./img/howto.jpg" alt="How To" style="height: 300px; margin-right: 100px;"/><img src="./img/brackets.jpg" alt="Brackets" style="height: 300px;"/>
 
 ### Selecting and Grouping Symbols
 
