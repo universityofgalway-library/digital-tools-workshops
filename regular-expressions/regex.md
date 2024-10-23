@@ -1,13 +1,6 @@
 **Regular expressions** _\(regex, regexp\)_ are a formal language for searching and replacing sequences of characters. With the help of regex, you can define a pattern and find or replace pieces of the text that match it. Many text editors such as Google Docs, Notepad++, Sublime, Geany, Brackets, Atom, etc., support regular expressions. 
 
-Websites:
 
-* [**http://regexr.com/**](http://regexr.com/)
-* [**https://regex101.com/**](https://regex101.com/)
-
-When working with the website, you will not only see matches but also the breakdown of your regular expression.
-
-This is how working with regular expressions looks in Notepad++ \(to access this menu, press Ctrl+F or Search\) and set the necessary checkboxes \(be sure to enable regular expressions, and if necessary, case sensitivity, search direction, and line wrap consideration\).
 
 ### Selecting and Grouping Symbols
 
@@ -79,6 +72,14 @@ As you've already noticed, like any language, regular expressions are written us
 ### Backreferences
 
 ## Cheatsheets
+
+## Regex testers
+When using these websites websites, you'll see both the matches and a detailed explanation of your regular expression.
+
+* https://regex101.com/
+* http://regexr.com/
+* http://myregexp.com/
+* https://www.regexpal.com/
 
 ## Practice
 
