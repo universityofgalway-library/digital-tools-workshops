@@ -213,6 +213,11 @@ When using these websites websites, you'll see both the matches and a detailed e
 * https://regexcrossword.com/
 * https://regexone.com/
 
+## Regex library
+This website provides a library of regular expressions, which you can search by keywords, e.g. 'time': https://regexlib.com/ 
+
+<img src="./img/googling-for-the-regex.jpg" style="height: 300px; margin-right: 10px;"/>
+
 ## Documentation
 * [Regex in Google Docs](https://support.google.com/a/answer/1371415?hl=en)
 * [Regex in Python](https://docs.python.org/3/howto/regex.html)
