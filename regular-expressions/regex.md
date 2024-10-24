@@ -121,6 +121,8 @@ Quantifiers by default behave greedily: this means that they try to "consume" as
 
 As you've already noticed, like any language, regular expressions are written using a special alphabet—dots, asterisks, parentheses, etc. But what if you need to find special characters like + or \* in the text? It's simple: you need to **escape** them by placing a backslash before them.
 
+<img src="./img/meta.png" style="height: 200px; margin-right: 10px;"/>
+
 
 ## Being cautious
 
