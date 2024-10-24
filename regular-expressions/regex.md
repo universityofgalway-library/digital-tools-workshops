@@ -21,8 +21,6 @@ Alternatively, you can use https://regex101.com/ or any other online regex teste
 ## How does a regular expression look like?
 A regular expression can be as simple as a single character or word. 
 
-<img src="./img/char.png" style="height: 440px; margin-right: 10px;"/>
-
 <img src="./img/word.png" style="height: 300px; margin-right: 10px;"/>
 
 However, regular expressions more often look like something your cat typed jumping on the keyboard, or just like a wall of brackets. Although they may seem intimidating at first glance, their syntax is actually quite straightforward!
