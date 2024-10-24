@@ -121,6 +121,12 @@ Quantifiers by default behave greedily: this means that they try to "consume" as
 
 As you've already noticed, like any language, regular expressions are written using a special alphabet—dots, asterisks, parentheses, etc. But what if you need to find special characters like + or \* in the text? It's simple: you need to **escape** them by placing a backslash before them. In this example, we escape \* to make it a literal text character, while + remains a special character and means "one or more times".
 
+## Being cautious
+
+Regex can be very helpful, but you can also easily ruin your data with them. Always double-check before making irreversible changes!
+
+<img src="./img/regular-expressions-meme.jpg" style="height: 300px; margin-right: 10px;"/>&nbsp;&nbsp;&nbsp;<img src="./img/cows.jpg" style="height: 300px;"/>
+
 ## Exercises 
 
 #### Exercise 1
