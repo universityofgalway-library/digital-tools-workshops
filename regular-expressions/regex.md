@@ -140,7 +140,7 @@ What will the following regex match? What do you have to change to capture phras
 I love|hate regex!
 ```
 #### Exercise 2
-When Irish placenames are anglicised, there can emerge multiple spellings of the same name. The town of Cathair Saidhbhín is usually anglicised as Cahersiveen or Cahirciveen. Wie a regex to capture both these spelling. What other spellings will this regex capture?
+When Irish placenames are anglicised, there can emerge multiple spellings of the same name. The town of Cathair Saidhbhín is usually anglicised as Cahersiveen or Cahirciveen. Write a regex to capture both of these spelling. What other potential spellings will this regex capture?
 
 #### Exercise 3
 Using [Unicode blocks](https://www.compart.com/en/unicode/block), write a regex to match:
