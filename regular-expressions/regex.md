@@ -19,7 +19,7 @@ Alternatively, you can use https://regex101.com/ or any other online regex teste
 <img src="./img/regex101.png" alt="Search" style="height: 400px; margin-right: 10px;"/>
 
 ## How does a regular expression look like?
-A regular expression can be as simple as a single character or word. 
+A regular expression can be as simple as a single character or word, just like in the standard search. 
 
 <img src="./img/word.png" style="height: 300px; margin-right: 10px;"/>
 
