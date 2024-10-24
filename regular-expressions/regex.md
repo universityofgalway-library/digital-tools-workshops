@@ -127,14 +127,14 @@ As you've already noticed, like any language, regular expressions are written us
 
 ## Being cautious
 
-Regex can be very helpful, but you can also easily ruin your data with them. Always double-check before making irreversible changes!
+Regex can be very helpful, but you can also easily ruin your data with them — especially if you are bulk-processing many files. Always double-check your regular expression on test data before making irreversible changes!
 
 <img src="./img/regular-expressions-meme.jpg" style="height: 300px; margin-right: 10px;"/>&nbsp;&nbsp;&nbsp;<img src="./img/cows.jpg" style="height: 300px;"/>
 
 ## Exercises 
 
 #### Exercise 1
-What will the following regex match? What do you have to change to capture phrases "I love regex!" and "I hate regex!"? Make another change for the regex to capture any of these phases with one or more exclamation marks.
+What will the following regex match? What do you have to change to capture phrases "I love regex!" and "I hate regex!"? Make another change for the regex to capture any of these phrases with one or more exclamation marks.
 
 ```
 I love|hate regex!
@@ -189,7 +189,7 @@ However, this is a simplified version. A regular expression that would *actually
 Download [p155_0071_0009_d001.txt](https://github.com/universityofgalway-library/digital-tools-workshops/blob/main/regular-expressions/data/p155_0071_0009_d001.txt) and [p155_0071_0009_d002.txt](https://github.com/universityofgalway-library/digital-tools-workshops/blob/main/regular-expressions/data/p155_0071_0009_d002.txt). These are two pages of a letter from the [Imirce project](https://imirce.universityofgalway.ie/p/ms). Using a text editor,
 
 * Find all mentions of Ireland and Irishmen in both documents in English.
-* Find all mentions of Ireland and Irishmen in both documents in Irish (tip: look for *Eire, Eireann, hEireann, Eireannach, Eireannaigh, Eirinn*). What if you had to catch standard spellinggs with an É too?
+* Find all mentions of Ireland and Irishmen in both documents in Irish (tip: look for *Eire, Eireann, hEireann, Eireannach, Eireannaigh, Eirinn*). What if you had to catch standard spellings with an **É** too (*Éire, Éireann* etc.)?
 * Replace all 7 and & with 'agus' ('and') in both documents; keep in mind that there should be whitespaces around 7 or & for them to qualify for replacement!
 * The letter is written in the old orthography. For example, the words *brisde, uachdarán, agad* are spelled with a **t** instead of a **d** now, and the words *taisbeáint, oisbideal* are spelled with a **p** instead of a **b**. Can you use regular expressions to modernise the spelling of these words in the text? Why?
 
