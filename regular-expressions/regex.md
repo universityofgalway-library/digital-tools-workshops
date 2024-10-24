@@ -168,6 +168,14 @@ Irish names can be spelled in many different ways. Write a regex to capture all 
 - Pádhraic
 - Páraic
 
+#### Exercise 6
+
+Download [p155_0071_0009_d001.txt](https://github.com/universityofgalway-library/digital-tools-workshops/blob/main/regular-expressions/data/p155_0071_0009_d001.txt) and [p155_0071_0009_d002.txt](https://github.com/universityofgalway-library/digital-tools-workshops/blob/main/regular-expressions/data/p155_0071_0009_d002.txt). These are two pages of a letter from the [Imirce project](https://imirce.universityofgalway.ie/p/ms). Using a text editor,
+
+* Find all mentions of Ireland and Irishmen in both documents in English.
+* Find all mentions of Ireland and Irishmen in both documents in Irish (tip: look for *Eire, Eireann, hEireann, Eireannach, Eireannaigh, Eirinn*). What if you had to catch standard spellinggs with an É too?
+* Replace all 7 with 'agus' ('and') in both documents
+* The letter is written in the old orthography. For example, the words *brisde, uachdarán, agad* are spelled with a **t** instead of a **d** now, and the words *taisbeáint, oisbideal* are spelled with a **p** instead of a **b**. Can you use regular expressions to modernise the spelling of these words in the text? Why?
 
 ## Cheatsheets
 
