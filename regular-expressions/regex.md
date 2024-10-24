@@ -62,7 +62,7 @@ You can combine ranges:
 
 ### Groups and backreferencing
 
-A part of a pattern can be enclosed in parentheses. This is called a **capturing group**. 
+A part of a pattern can be enclosed in parentheses. This is called a **capturing group**. You can later refer to this group by its number, for example, when you need to swap chunks of text.
 
 | Syntax   | Description                                    |
 |:-----------|:------------------------------------------------|
@@ -73,6 +73,10 @@ A part of a pattern can be enclosed in parentheses. This is called a **capturing
 Groups are numbered by the opening parenthesis.
 
 ![](./img/r7.png)
+
+Here is an example of swapping AB and BA using capturing groups:
+
+<img src="./img/subst.png" style="height: 300px; margin-right: 10px;"/>
 
 ### Quantifiers
 
