@@ -201,7 +201,7 @@ Download [p155_0071_0009_d001.txt](https://github.com/universityofgalway-library
 * [DataCamp Regex Cheatsheet](https://github.com/universityofgalway-library/digital-tools-workshops/blob/main/regular-expressions/Regular_Expressions_Cheat_Sheet.pdf)
 
 ## Regex testers
-When using these websites websites, you'll see both the matches and a detailed explanation of your regular expression.
+When using these websites, you'll see both the matches and a detailed explanation of your regular expression.
 
 * https://regex101.com/
 * http://regexr.com/
