@@ -160,7 +160,6 @@ One of the most common uses of regex is email validation. Try to write a regex f
   Assuming you would like to capture only emails that take up the whole line (i.e. start at the beginning of the line and end at the end of the line), like in the picture:
 
 `^([A-Za-z0-9-_.])+@([A-Za-z0-9-_])+(\.([A-Za-z]){2,4})+$`
-</details>
 
 However, this is a simplified version. The regular expression that would *actually* captures *most* email addresses, [looks like this](https://emailregex.com/):
 
@@ -169,6 +168,8 @@ However, this is a simplified version. The regular expression that would *actual
 ```
 
 <img src="./img/email2.png" style="height: 400px;"/>
+
+</details>
 
 #### Exercise 5 
 
