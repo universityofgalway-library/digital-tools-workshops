@@ -130,14 +130,40 @@ What will the following regex match? What do you have to change to capture phras
 I love|hate regex!
 ```
 #### Exercise 2
+When Irish placenames are anglicised, there can emerge multiple spellings of the same name. The town of Cathair Saidhbhín is usually anglicised as Cahersiveen or Cahirciveen. Wie a regex to capture both these spelling. What other spellings will this regex capture?
+
+#### Exercise 3
 Using [Unicode blocks](https://www.compart.com/en/unicode/block), write a regex to match:
 
 * Devanagari alphabet
 * All Georgian characters (main + extended)
 * Greek alphabet + Ancient Greek numbers + Ancient Greek musical notation + Byzantine musical notation
 
+#### Exercise 3
+One of the most common uses of regex is email validation. Try to write a regex for capturing emails using the visualisation below for reference.
+
+![](./img/email.png)
+
+The visualisation was made with Regexper: https://regexper.com/
+
+### Exercise 4 
+
+Irish names can be spelled in many different ways. Write a regex to capture all spellings of the name Pádraig listed below:
+- Padraig
+- Pádraic
+- Padraic
+- Pádhraig
+- Padhraig
+- Padraigh
+- Padhraic
+- Pádhraic
+- Páraic
+
 
 ## Cheatsheets
+
+* [David Child's Regex Cheatsheet](https://github.com/universityofgalway-library/digital-tools-workshops/blob/main/regular-expressions/davechild_regular-expressions.pdf)
+* [DataCamp Regex Cheatsheet](https://github.com/universityofgalway-library/digital-tools-workshops/blob/main/regular-expressions/Regular_Expressions_Cheat_Sheet.pdf)
 
 ## Regex testers
 When using these websites websites, you'll see both the matches and a detailed explanation of your regular expression.
