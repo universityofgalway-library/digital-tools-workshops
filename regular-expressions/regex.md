@@ -150,6 +150,19 @@ Using [Unicode blocks](https://www.compart.com/en/unicode/block), write a regex 
 * Greek and Coptic alphabet + Ancient Greek numbers
   
 #### Exercise 4
+
+Irish names can be spelled in many different ways. Write a regex to capture all spellings of the name Pádraig listed below:
+- Padraig
+- Pádraic
+- Padraic
+- Pádhraig
+- Padhraig
+- Padraigh
+- Padhraic
+- Pádhraic
+- Páraic
+
+#### Exercise 5
 One of the most common uses of regex is email validation. Try to write a regex for capturing emails using the visualisation below for reference. The visualisation was made with Regexper: https://regexper.com/
 
 <img src="./img/email.png" style="height: 150px;"/>
@@ -170,19 +183,6 @@ However, this is a simplified version. A regular expression that would *actually
 <img src="./img/email2.png" style="height: 400px;"/>
 
 </details>
-
-#### Exercise 5 
-
-Irish names can be spelled in many different ways. Write a regex to capture all spellings of the name Pádraig listed below:
-- Padraig
-- Pádraic
-- Padraic
-- Pádhraig
-- Padhraig
-- Padraigh
-- Padhraic
-- Pádhraic
-- Páraic
 
 #### Exercise 6
 
