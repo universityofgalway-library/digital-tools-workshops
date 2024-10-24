@@ -161,7 +161,7 @@ One of the most common uses of regex is email validation. Try to write a regex f
 
 `^([A-Za-z0-9-_.])+@([A-Za-z0-9-_])+(\.([A-Za-z]){2,4})+$`
 
-However, this is a simplified version. The regular expression that would *actually* capture *most* email addresses, [looks like this](https://emailregex.com/):
+However, this is a simplified version. A regular expression that would *actually* capture *most* email addresses, [looks like this](https://emailregex.com/):
 
 ```
 (?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])
@@ -190,7 +190,7 @@ Download [p155_0071_0009_d001.txt](https://github.com/universityofgalway-library
 
 * Find all mentions of Ireland and Irishmen in both documents in English.
 * Find all mentions of Ireland and Irishmen in both documents in Irish (tip: look for *Eire, Eireann, hEireann, Eireannach, Eireannaigh, Eirinn*). What if you had to catch standard spellinggs with an É too?
-* Replace all 7 and & with 'agus' ('and') in both documents; keep in mind that there should be whitespaces arounf them!
+* Replace all 7 and & with 'agus' ('and') in both documents; keep in mind that there should be whitespaces around 7 or & for them to qualify for replacement!
 * The letter is written in the old orthography. For example, the words *brisde, uachdarán, agad* are spelled with a **t** instead of a **d** now, and the words *taisbeáint, oisbideal* are spelled with a **p** instead of a **b**. Can you use regular expressions to modernise the spelling of these words in the text? Why?
 
 <img src="./img/final.jpg" style="height: 200px; margin-right: 10px;"/>
