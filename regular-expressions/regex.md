@@ -119,7 +119,8 @@ Quantifiers by default behave greedily: this means that they try to "consume" as
 
 ## Escaping syntax elements
 
-As you've already noticed, like any language, regular expressions are written using a special alphabet—dots, asterisks, parentheses, etc. But what if you need to find special characters like + or \* in the text? It's simple: you need to **escape** them by placing a backslash before them. In this example, we escape \* to make it a literal text character, while + remains a special character and means "one or more times".
+As you've already noticed, like any language, regular expressions are written using a special alphabet—dots, asterisks, parentheses, etc. But what if you need to find special characters like + or \* in the text? It's simple: you need to **escape** them by placing a backslash before them.
+
 
 ## Being cautious
 
@@ -145,14 +146,14 @@ Using [Unicode blocks](https://www.compart.com/en/unicode/block), write a regex 
 * All Georgian characters (main + extended)
 * Greek alphabet + Ancient Greek numbers + Ancient Greek musical notation + Byzantine musical notation
 
-#### Exercise 3
+#### Exercise 4
 One of the most common uses of regex is email validation. Try to write a regex for capturing emails using the visualisation below for reference.
 
 ![](./img/email.png)
 
 The visualisation was made with Regexper: https://regexper.com/
 
-### Exercise 4 
+#### Exercise 5 
 
 Irish names can be spelled in many different ways. Write a regex to capture all spellings of the name Pádraig listed below:
 - Padraig
