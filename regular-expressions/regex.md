@@ -121,7 +121,7 @@ Quantifiers by default behave greedily: this means that they try to "consume" as
 
 As you've already noticed, like any language, regular expressions are written using a special alphabet—dots, asterisks, parentheses, etc. But what if you need to find special characters like + or \* in the text? It's simple: you need to **escape** them by placing a backslash before them.
 
-<img src="./img/meta.png" style="height: 200px; margin-right: 10px;"/>
+<img src="./img/meta.png" style="height: 150px; margin-right: 10px;"/>
 
 
 ## Being cautious
@@ -145,15 +145,30 @@ When Irish placenames are anglicised, there can emerge multiple spellings of the
 Using [Unicode blocks](https://www.compart.com/en/unicode/block), write a regex to match:
 
 * Devanagari alphabet
-* All Georgian characters (main + extended)
-* Greek alphabet + Ancient Greek numbers + Ancient Greek musical notation + Byzantine musical notation
-
+* All Georgian characters (main + extended + supplement)
+* Greek alphabet + Ancient Greek numbers
+  
 #### Exercise 4
-One of the most common uses of regex is email validation. Try to write a regex for capturing emails using the visualisation below for reference.
+One of the most common uses of regex is email validation. Try to write a regex for capturing emails using the visualisation below for reference. The visualisation was made with Regexper: https://regexper.com/
 
 ![](./img/email.png)
 
-The visualisation was made with Regexper: https://regexper.com/
+<details>
+  <summary>Answer</summary>
+
+  Assuming you would like to capture only emails that take up the whole line (i.e. start at the beginning of the line and end at the end of the line), like in the picture:
+
+`^([A-Za-z0-9-_.])+@([A-Za-z0-9-_])+(\.([A-Za-z]){2,4})+$`
+</details>
+
+However, this is a simplified version. The regular expression that would *actually* capture *most* email addresses, [looks like this](https://emailregex.com/):
+
+```
+(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])
+```
+![](./img/email2.png)
+
+<img src="./img/googling-for-regex.png" style="height: 300px; margin-right: 10px;"/>
 
 #### Exercise 5 
 
@@ -174,8 +189,10 @@ Download [p155_0071_0009_d001.txt](https://github.com/universityofgalway-library
 
 * Find all mentions of Ireland and Irishmen in both documents in English.
 * Find all mentions of Ireland and Irishmen in both documents in Irish (tip: look for *Eire, Eireann, hEireann, Eireannach, Eireannaigh, Eirinn*). What if you had to catch standard spellinggs with an É too?
-* Replace all 7 with 'agus' ('and') in both documents
+* Replace all 7 and & with 'agus' ('and') in both documents; keep in mind that there should be whitespaces arounf them!
 * The letter is written in the old orthography. For example, the words *brisde, uachdarán, agad* are spelled with a **t** instead of a **d** now, and the words *taisbeáint, oisbideal* are spelled with a **p** instead of a **b**. Can you use regular expressions to modernise the spelling of these words in the text? Why?
+
+<img src="./img/final.png" style="height: 200px; margin-right: 10px;"/>
 
 ## Cheatsheets
 
