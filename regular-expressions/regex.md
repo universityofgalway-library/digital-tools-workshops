@@ -125,7 +125,7 @@ As you've already noticed, like any language, regular expressions are written us
 
 <img src="./img/meta.png" style="height: 150px; margin-right: 10px;"/>
 
-**NB!** Within square brackets (a range), syntax elements loose their power, and you don't have to escape them.
+**NB!** Within square brackets (a range), syntax elements lose their power, and you don't have to escape them.
 
 * `.*?` — matches any character any times from 0 to infinity, as few times as possible (lazy)
 * `\.\*\?` — matches a sequence of 3 characters **.*?** literally
