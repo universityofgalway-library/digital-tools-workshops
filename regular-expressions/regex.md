@@ -92,7 +92,7 @@ Here is an example of swapping AB and BA using capturing groups:
 
 #### "Greedy" and "lazy" quantifiers
 
-Quantifiers by default behave greedily: this means that they try to "consume" as many characters as possible and, out of all possible options, they will catch the longest string. 
+Quantifiers by default behave greedily: this means that they try to "consume" as many characters as possible and, out of all possible options, return the longest string. To make a quantifier "lazy", i.e. matching the shortest possible string, you need to add a **?** after that quantifier.
 
 | Greedy Quantifiers   | Lazy Quantifiers   |
 | :---                 | :---               |
