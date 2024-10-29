@@ -36,20 +36,20 @@ However, regular expressions more often look like something your cat typed jumpi
 | **.**     | any single character                           |
 | **A\|B**  | match either A (everything on the left) or B (everything on the right)
 | **[ABC]**             | any single character from those in brackets           |
-| **[^ABC]**            | any single character except those enclosed in brackets     
+| **[^ABC]**            | any single character *except* those enclosed in brackets     
 | **[A-Z]**     | any single uppercase [basic Latin](https://en.wikipedia.org/wiki/Basic_Latin_(Unicode_block)) character        |
-| **[a-z]**     | any lowercase character (Latin alphabet)               |
-| **[0-9]** or **\d**| a digit                                         |
-| **[^0-9]** or **\D**| any character except a digit                    |
+| **[a-z]**     | any single lowercase basic Latin character              |
+| **[0-9]** or **\d**| a single digit                                         |
+| **[^0-9]** or **\D**| any single character *except* a digit                    |
  
 You can combine ranges:
 
 | Syntax   | Description                                    |
 |:-----------|:------------------------------------------------|
-| **[A-Za-z]**               | any uppercase or lowercase character from basic Latin alphabet                          |
-| **[A-Za-z0-9]**            | any uppercase or lowercase character from basic Latin alphabet, and digits               |
-| **[A-Za-z0-9_]** or **\w**| any uppercase or lowercase character from basic Latin alphabet, digits, and _            |
-| **[^A-Za-z0-9_]** or **\W**| anything except uppercase or lowercase characters (Latin alphabet), digits, and _ |
+| **[A-Za-z]**               | any single uppercase or lowercase character from basic Latin alphabet                          |
+| **[A-Za-z0-9]**            | any single uppercase or lowercase character from basic Latin alphabet, and digits               |
+| **[A-Za-z0-9_]** or **\w**| any single uppercase or lowercase character from basic Latin alphabet, digits, and _            |
+| **[^A-Za-z0-9_]** or **\W**| any single character *except* uppercase or lowercase basic Latin characters, digits, and _ |
 
 **Tip**: regular expressions operate Unicode symbol ranges, and you can create custom ones using [Unicode blocks](https://www.compart.com/en/unicode/block) as reference.
 
@@ -125,9 +125,17 @@ As you've already noticed, like any language, regular expressions are written us
 
 <img src="./img/meta.png" style="height: 150px; margin-right: 10px;"/>
 
+**NB!** Within square brackets (a range), syntax elements loose their power, and you don't have to escape them.
+
+* `.*?` — matches any character any times from 0 to infinity, as few times as possible (lazy)
+* `\.\*\?` — matches a sequence of 3 characters **.*?** literally
+* `[.*?]`— matches a single character that can be either a dot, or an asterisk, or a question mark
+
 ## Being cautious
 
-Regex can be very helpful, but you can also easily ruin your data with them — especially if you are bulk-processing many files. Always double-check your regular expression on test data before making irreversible changes!
+Regex can be very helpful, but you can also easily ruin your data with them — especially if you are bulk-processing many files. Always double-check your regular expression on test data before making irreversible changes! 
+
+The most dangerous pattern is `.*`: "any character any times from 0 to infinity, as many times as possible (greedy)". By itself, it will just match a whole string! The "any character any times" bit doesn't mean that the same character has to be repeated. The quantifier applies to the regex element ("any character"), not to a particular match!
 
 <img src="./img/regular-expressions-meme.jpg" style="height: 300px; margin-right: 10px;"/>&nbsp;&nbsp;&nbsp;<img src="./img/cows.jpg" style="height: 300px;"/>
 
