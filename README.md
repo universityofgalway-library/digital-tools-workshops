@@ -11,5 +11,5 @@ Notes, code and data for the Digital Tools for Research workshop series.
 | 20 January 2025    | [Data Visualisation with Tableau](https://universityofgalway.libcal.com/event/4275914) |Dr. Heike Vornhagen, *Data Science Institute*|
 | 20 February 2025   | [Poster Design with Canva](https://universityofgalway.libcal.com/event/4280243) |Eileen Kennedy, *Library*|
 | 25 March 2025      | [Network Analysis with Gephi](https://universityofgalway.libcal.com/event/4282586) | Oksana Dereza, *Library/Data Science Institute* |
-| 22 April 2025      | [Introduction to Linked Data](https://universityofgalway.libcal.com/event/4282587) | Oksana Dereza, *Library/Data Science Institute* |
+| 24 April 2025      | [Introduction to Linked Data](https://universityofgalway.libcal.com/event/4282587) | Oksana Dereza, *Library/Data Science Institute* |
 | 20 May 2025        | [Introduction to command line interface (CLI) and Git](https://universityofgalway.libcal.com/event/4275912) | Oksana Dereza, *Library/Data Science Institute* |
