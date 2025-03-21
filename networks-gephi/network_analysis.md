@@ -92,7 +92,7 @@ With Gephi, you can create very beautiful and informative visualisations. Here i
 
 ![](./img/image2.png)
 
-Graphs created in Gephi can not only be saved as images or PDFs but also published online (for example, on GitHub) using the Sigma plugin.  Here is [an example of an interactive graph](https://yosej.github.io/Ossian_Full_Network/) based on the Ossian poems by James Macpherson.
+Graphs created in Gephi can not only be saved as images or PDFs but also published online (for example, on GitHub) using the Sigma plugin.  Here is [an example of an interactive graph](https://yosej.github.io/Ossian_Full_Network/) based on the Ossian cycle of epic poems by James Macpherson.
 
 Now, let's take a look at how to do all of this.
 
