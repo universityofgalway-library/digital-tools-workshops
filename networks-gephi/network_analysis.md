@@ -87,27 +87,25 @@ A co-occurrence network of the characters in the Game of Thrones ([GoT_Book1.csv
 
 #### gexf
 
-A WebAtlas study realized for the European Science in Society program ([WebAtlas_EuroSiS.gexf](./data/WebAtlas_EuroSiS.gexf)).
+A WebAtlas study for the European Science in Society program ([WebAtlas_EuroSiS.gexf](./data/WebAtlas_EuroSiS.gexf)).
 
 ![](./img/graph7.png)
 
 ## Gephi
 
-**Gephi** is a free open source program for visualising network. You can download the latest versiont [from the official website](https://gephi.org/), where you will also find [a user guide](https://gephi.org/users/). We will be working with a graph based on Victor Hugo's novel Les Misérables, whoich you can find in the _data_ folder in this repository, or, alternatively, [download here](http://www-personal.umich.edu/~mejn/netdata/lesmis.zip).  Here are a few websites and repositories where you can find more interesting graph data to explore and practice
+**Gephi** is a free open source program for visualising network. You can download the latest version [from the official website](https://gephi.org/), where you will also find [a user guide](https://gephi.org/users/). With Gephi, you can create very beautiful and informative visualisations. Here is an example from the work of Polish stylometry expert Jan Rybicki: a chronology of Charles Dickens' novels, built using the most frequent words in the text.
+
+![](./img/image2.png)
+
+Graphs created in Gephi can not only be saved as images or PDFs but also published online (for example, on GitHub) using the Sigma plugin.  Here is [an example of an interactive graph](https://yosej.github.io/Ossian_Full_Network/) based on the Ossian cycle of epic poems by James Macpherson.
+
+Now, let's take a look at how to do all of this. For this workshop, we will be working with co-occurrence network of the characters in the first book of the _Game of Thrones_ series, which you can download [here](./data/GoT_Book1.csv). Feel free to use your own data or any other dataset available in the `data` folder in this repository or from external resources.  Below are a few websites and repositories where you can find more interesting graph data to explore and practice:
 
 * [Network Data Repository](https://networkrepository.com/)
 * [Stanford Large Network Dataset Collection](https://snap.stanford.edu/data/)
 * [Colorado Index of Complex Networks](https://icon.colorado.edu/networks)
 * [University of Michigan](http://www-personal.umich.edu/~mejn/netdata/)
 * [Network Corpus](https://github.com/microgravitas/network-corpus)
-
-With Gephi, you can create very beautiful and informative visualisations. Here is an example from the work of Polish stylometry expert Jan Rybicki: a chronology of Charles Dickens' novels, built using the most frequent words in the text.
-
-![](./img/image2.png)
-
-Graphs created in Gephi can not only be saved as images or PDFs but also published online (for example, on GitHub) using the Sigma plugin.  Here is [an example of an interactive graph](https://yosej.github.io/Ossian_Full_Network/) based on the Ossian cycle of epic poems by James Macpherson.
-
-Now, let's take a look at how to do all of this.
 
 ### Getting started
 
