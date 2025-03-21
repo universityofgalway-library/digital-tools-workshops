@@ -72,7 +72,13 @@ There is a number of ways to measure the importance of a node.
 
 Graphs are usually stored in text files (.gml) or in XML files (.graphml, .gexf), where all the nodes, edges, and their attributes – for example, the name of a node or the weight of an edge – are listed. This is what .gml and .gexf files look like, respectively.
 
+#### gml
+
+A coappearance network of characters in the novel _Les Misérables_ by Victor Hugo ([lesmis.gml](./data/lesmis.gml)).
+
 ![](./img/grapg6.png)
+
+A WebAtlas study realized for the European Science in Society program ([WebAtlas_EuroSiS.gexf](./data/WebAtlas_EuroSiS.gexf)).
 
 ![](./img/graph7.png)
 
