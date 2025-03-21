@@ -43,28 +43,30 @@ Nodes in graphs can be grouped into communities. A **community** is a dense subg
 
 _Image source: [TDS Archive](https://medium.com/data-science/community-detection-algorithms-9bd8951e7dae)_
 
-### Метрики
+### Graph metrics
 
-**Метрика** -- это результат измерений, проведенных определенным способом. Представьте, что вы выбираете материал для реферата на тему "Слово о полку Игореве": у вас есть оригинальный текст в 50 страниц, современная книга А.А. Зализняка "Слово о полку Игореве: взгляд лингвиста" в 500 страниц и англоязычная статья "The Igor Tales and Their Folkloric Background" в 100 страниц. Если метрикой для вас является количество страниц, то вы выберете оригинальный текст, а если простота чтения -- то современную русскоязычную книжку.
+A **metric** is a quantifiable measure used to describe and compare models, processes and performance, e.g. _customer retention rate_ or _the number of users visiting your website_. When comparing multiple items, the outcome of the comparison will depend on the metric used. For example, when comparing the research output of different academics, using the _number of publications_ as a metric would rank the researcher with the most articles published as the highest. However, if you use _citation count_ as a metric, the researcher whose work is most frequently cited, even if they have fewer publications, may be considered more influential. 
 
-**Степень, или мощность узла** _\(degree\)_ -- это количество его связей.
+In graph theory and network analysis, the following metrics are commonly used.
 
-**Взвешенная степень** _\(weighed degree\)_ - - это количество связей узла, разделенное на общее количество связей в графе.
+**Degree** is the number of connections a node has.
 
-Важность узла можно определять разными способами:
+**Weighted degree** is the number of connections of a node divided by the total number of connections in the graph.
 
-* **degree centrality**: у кого больше связей, тот и важнее
-* **closeness centrality**: чем центральнее узел \(т.е. чем короче путь от него до всех остальных узлов\), тем он важнее
-* **betweenness centrality**: чем больше раз узел связывает два других узла, тем он важнее
-* **eigencentrality**: чем больше друзей у твоих друзей, тем ты важнее
+There is a number of ways to measure the importance of a node.
 
-**Коэффициент ассортативности** _\(assortativity coefficient\) _определяет, с кем связаны "важные" узлы: если с другими "важными" узлами, то значение коэффициента высокое, а если нет -- низкое.
+* **Degree centrality**:  the more connections a node has, the more important it is.
+* **Closeness centrality**: the more central a node is (i.e., the shorter the path from it to all other nodes), the more important it is.
+* **Betweenness centrality**: the more often a node connects two other nodes, the more important it is.
+* **Eigencentrality**: " the more friends your friends have, the more important you are".
 
-**Коэффициент кластеризации** _\(clustering coefficient\) _-- степень взаимодействия между собой ближайших соседей узла, т.е. вероятность того, что ближайшие соседи узла будут связаны не только с ним, но и между собой.
+**Assortativity coefficient** determines with whom the "important" nodes are connected: if they are connected with other "important" nodes, the coefficient value is high, otherwise, it is low.
 
-**Плотность графа** _\(density\)_ -- отношение числа ребер к максимально возможному. В сообществах высокий коэффициент кластеризации и высокая плотность.
+**Clustering coefficient** is the degree of interaction between a node's immediate neighbors, i.e., the probability that the node's closest neighbors are not only connected to it but also to each other.
 
-**Модулярность** _\(modularity\) _показывает, насколько при заданном разбиении графа на группы плотность связей внутри группы больше плотности связей между группами. С помощью этой метрики граф разбивается на сообщества.
+**Density** is the ratio of the number of edges to the maximum possible number of edges. Communities tend to have a high clustering coefficient and high density.
+
+**Modularity** measures how much denser the connections within a group are compared to the connections between groups. This metric is used to partition the graph into communities.
 
 ### Форматы графов
 
