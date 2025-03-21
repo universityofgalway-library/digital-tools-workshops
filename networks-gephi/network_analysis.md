@@ -68,9 +68,9 @@ There is a number of ways to measure the importance of a node.
 
 **Modularity** measures how much denser the connections within a group are compared to the connections between groups. This metric is used to partition the graph into communities.
 
-### Форматы графов
+### Graph formats
 
-Граф записывается в виде текстового \(.gml\) или XML-файла \(.graphml, .gexf\), где перечисляются все узлы, ребра и их атрибуты -- например, название узла или вес ребра. Вот так выглядят файлы .gml и .gexf соответственно.
+Graphs are usually stored in text files (.gml) or in XML files (.graphml, .gexf), where all the nodes, edges, and their attributes – for example, the name of a node or the weight of an edge – are listed. This is what .gml and .gexf files look like, respectively.
 
 ![](./img/grapg6.png)
 
