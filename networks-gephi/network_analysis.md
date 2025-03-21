@@ -70,13 +70,20 @@ There is a number of ways to measure the importance of a node.
 
 ### Graph formats
 
-Graphs are usually stored in text files (.gml) or in XML files (.graphml, .gexf), where all the nodes, edges, and their attributes – for example, the name of a node or the weight of an edge – are listed. This is what .gml and .gexf files look like, respectively.
+Graphs are usually stored in text files (.gml, .csv) or in XML files (.graphml, .gexf), where all the nodes, edges, and their attributes – for example, the name of a node or the weight of an edge – are listed. This is what .gml and .gexf files look like, respectively.
 
 #### gml
 
 A coappearance network of characters in the novel _Les Misérables_ by Victor Hugo ([lesmis.gml](./data/lesmis.gml)).
 
-![](./img/grapg6.png)
+![](./img/graph6.png)
+
+#### csv
+
+A co-occurrence network of the characters in the Game of Thrones ([GoT_Book1.csv](./data/GoT_Book1.csv)).
+
+![](./img/graph8.png)
+
 
 #### gexf
 
@@ -86,7 +93,13 @@ A WebAtlas study realized for the European Science in Society program ([WebAtlas
 
 ## Gephi
 
-**Gephi** is a free open source program for visualising network. You can download the latest versiont [from the official website](https://gephi.org/), where you will also find [a user guide](https://gephi.org/users/). We will be working with a graph based on Victor Hugo's novel Les Misérables, whoich you can find in the _data_ folder in this repository, or, alternatively, [download here](http://www-personal.umich.edu/~mejn/netdata/lesmis.zip).  You can find more interesting graph data to explore and practice, for example, [on the University of Michigan website](http://www-personal.umich.edu/~mejn/netdata/).
+**Gephi** is a free open source program for visualising network. You can download the latest versiont [from the official website](https://gephi.org/), where you will also find [a user guide](https://gephi.org/users/). We will be working with a graph based on Victor Hugo's novel Les Misérables, whoich you can find in the _data_ folder in this repository, or, alternatively, [download here](http://www-personal.umich.edu/~mejn/netdata/lesmis.zip).  Here are a few websites and repositories where you can find more interesting graph data to explore and practice
+
+* [Network Data Repository](https://networkrepository.com/)
+* [Stanford Large Network Dataset Collection](https://snap.stanford.edu/data/)
+* [Colorado Index of Complex Networks](https://icon.colorado.edu/networks)
+* [University of Michigan](http://www-personal.umich.edu/~mejn/netdata/)
+* [Network Corpus](https://github.com/microgravitas/network-corpus)
 
 With Gephi, you can create very beautiful and informative visualisations. Here is an example from the work of Polish stylometry expert Jan Rybicki: a chronology of Charles Dickens' novels, built using the most frequent words in the text.
 
