@@ -98,126 +98,114 @@ Now, let's take a look at how to do all of this.
 
 ### Getting started
 
-При запуске программы появляется приветственное окошко, где нужно выбрать "Открыть файл с графом". Я буду показывать все на примере графа своих друзей Вконтакте, выкачанного с помощью [вот этого приложения](https://vk.com/app3861133).
-
+When the program is launched, a welcome window appears where you need to select "Open graph file." 
 ![](./img/gephi_1.png)
 
-После импорта Gephi покажет отчет с характеристиками графа, а также количеством узлов и ребер.
+After importing, Gephi will display a report with the graph's characteristics, as well as the number of nodes and edges.
 
 ![](./img/gephi2.png)
 
-Сразу после загрузки граф будет выглядеть вот так.
+Immediately after loading, the graph will look like this.
 
 ![](./img/gephi3.png)
 
-Чтобы сделать его более наглядным, можно настроить свет и размер узлов и ребер в соответствии с их атрибутами. Начнем с того, что посчитаем модулярность, чтобы разбить наш граф на сообщества. Это делается во вкладке "Статистика" на рабочей панели справа.
+To make the graph more visually informative, you can adjust the colour and the size of the nodes and edges according to their attributes. Let's start by calculating the modularity to divide the graph into communities. This can be done in the "Statistics" tab on the workspace panel on the right.
 
 ![](./img/gephi4.png)
 
-Теперь перейдем к изменению цвета узлов и ребер. Это делается с помощью значка палитры во вкладке "Appearance" на левой рабочей панели. По умолчанию все узлы и ребра раскрашены одним цветом \(Unique\), но мы раскрасим их в соответствии с тем, к каким сообществам они принадлежат \(Partition &gt; Modularity Class\). Можно выбрать любой другой атрибут -- например, пол или город \(Partition &gt; sex/city\), или же раскрасить узлы в соответствии с их степенью \(Ranking &gt; Degree\).
+Now let's move on to changing the colour of the nodes and edges. This is done using the palette icon in the "Appearance" tab on the left workspace panel. By default, all nodes and edges are coloured in one colour (Unique), but we will colour them according to the communities they belong to (Partition > Modularity Class). You can also choose any other attribute, such as gender or city (Partition > Gender/City), or colour the nodes according to their degree (Ranking > Degree).
 
 ![](./img/gephi5.png)
 
-В правом нижнем углу вы увидите маленькую надпись Palette -- нажав на нее, можно выбрать цвета, в которые будут раскрашены узлы. В палитрах по умолчанию всего 8 цветов, а для такого большого графа явно нужно побольше. Для таких случаев в Gephi предусмотрена возможность сгенерировать палитру: чтобы цветов было столько, сколько разных значений у выбранного атрибута, нужно просто снять галочку с "Limit number of colours", а затем нажать Generate и OK. Я хочу раскрасить узлы в соответствии с сообществом, сообществ в моем графе 40 \(помните, мы считали модулярность?\), и поэтому я генерирую палитру из 40 цветов. Можно также выбрать стиль палитры \(параметр Presets\): пастельные тона, темные цвета, насыщенные цвета и т.п.
+In the bottom-right corner, you will see a small label "Palette." By clicking on it, you can choose the colours that the nodes will be coloured in. Default palettes have only 8 colours, but for such a large graph, you'll clearly need more. For such cases, Gephi provides the option to generate a palette: to have as many colours as there are different values for the selected attribute, simply uncheck "Limit number of colours," then click Generate and OK. I want to colour the nodes according to their community, and there are 40 communities in my graph (remember, we calculated the modularity?), so I will generate a palette with 40 colours. You can also choose the style of the palette (under the Presets parameter): pastel tones, dark colours, vivid colours, etc.
 
 ![](./img/gephi7.png)
 
-Теперь можно настроить размер узлов -- по умолчанию он тоже одиниковый. Чтобы сделать это, нужно нажать на иконку с кругами \(справа от палитры\) во вкладке "Appearance" на левой рабочей панели. Там же можно настроить толщину ребер -- для этого нужно перейти со вкладки Nodes на вкладку Edges. Оставшиеся две иконки отвечают за цвет и размер подписей.
+Now you can adjust the node sizes — by default, they are all the same. To do this, click on the icon with circles (to the right of the palette) in the "Appearance" tab on the left panel. Here, you can also adjust the thickness of the edges — just switch from the "Nodes" tab to the "Edges" tab. The remaining two icons control the colour and size of the labels.
 
 ![](./img/gephi8.png)
 
 ![](./img/gephi18.png)
 
-После этих манипуляций получится примерно такая картина. Управлять масштабом графа можно с помощью колеса мыши \(с помощью тачпада вряд ли получится, увы\), а кнопка с лупой в нижней части панели инструментов слева от рабочей области центрирует граф.
+After these adjustments, you should get a visualisation similar to this. You can zoom in and out using the mouse wheel (unfortunately, this might not work well with a touchpad). The magnifying glass button at the bottom of the toolbar to the left of the workspace centers the graph.
 
 ![](./img/gephi9098.png)
 
-По умолчанию граф уложен случайным образом -- то есть то, где располагается узел и какие узлы находятся рядом с ним, ничего не значит. Попробуем сделать картинку более осмысленной с помощью какого-нибудь алгоритма укладки. Меню "Укладка" находится в левом нижнем углу. Вот, например, алгоритм Fruchterman Reingold, который укладывает узлы по кругу \(обратите внимание, как узлы одного цвета, принадлежащие к одному сообществу, притянулись друг к другу\).
+By default, the graph layout is random—meaning the position of nodes and their proximity to each other do not convey any meaning. Let's make the visualization more meaningful using a layout algorithm. The Layout menu is located in the bottom left corner. For example, the Fruchterman-Reingold algorithm arranges nodes in a circular pattern. Notice how nodes of the same colour, belonging to the same community, are naturally drawn closer together.
 
 ![](./img/gephi9.png)
 
-А вот другой хороший алгоритм, Force Atlas. Кстати, необязательно ждать, пока укладка закончится \(спойлер: [она может идти вечно](https://www.dropbox.com/s/ek84sjxsanm1rda/force_layout.mp4?dl=0)\) -- если результат вас устраивает, можно просто нажать "Стоп".
+Here’s another useful algorithm: Force Atlas. By the way, you don’t have to wait for the layout process to finish completely (spoiler: [it can run indefinitely](https://www.dropbox.com/s/ek84sjxsanm1rda/force_layout.mp4?dl=0)). If you're happy with the result, you can simply press "Stop".
 
 ![](./img/gephi10.png)
 
-Если вам кажется, что узлы расположены слишком тесно, можно использовать "Расширение" \(Expand\).
+If you feel that the nodes are too close together, you can use the "Expand" function.
 
 ![](./img/gephi11.png)
 
-Картинка стала более репрезентативна, но явно не хватает подписей узлов \(они называются **метками**, или _labels_\). Для работы с ними предусмотрена панель инструментов снизу от области с графом. Чтобы подписи появились, нужно нажать на черную букву Т; правее можно выбрать  цвет, шрифт и кегль.
+The image has become more representative, but it clearly lacks node labels (they are called **labels**). There is a toolbar below the graph area for working with them. To make the labels appear, click on the black letter **T**; to the right, you can select the colour, font, and size.
 
 ![](./img/gephi12.png)
 
-После включения меток вы скорее всего столкнетесь с тем, что они наползают друг на друга. Чтобы этого избежать, нужно запустить алгоритм "Укладка меток". Картинки ниже -- до и после укладки. :\)
+After enabling labels, you will likely notice that they overlap. To avoid this, you need to run the Label Layout algorithm. The images below show the graph before and after applying the layout.
 
 ![](./img/gephi13.png)
 
 ![](./img/gephi14.png)
 
-Это далеко не все инструменты, доступные в Gephi, но наши манипуляции с внешним видом графа на этом заканчиваются. **NB!** В Gephi нет кнопки "Назад" \(да, такое бывает\), так что будьте осторожны с изменениями, чтобы потом не пришлось все переделывать с самого начала.
+These are not all the tools available in Gephi, but this concludes our modifications to the graph's appearance. **NB!** Gephi does not have an "Undo" button (yes, that happens!), so be careful with changes to avoid having to redo everything from scratch.
 
-Все это время мы находились во вкладке "Обработка". Следующая вкладка, "Лаборатория данных", позволяет нам посмотреть на данные в табличном виде, добавить или удалить столбцы и строки, отредактировать или отфильтровать их с помощью регулярных выражений и экспортировать данные в csv \(или, наоборот, импортировать их из него, что очень удобно\).
+So far, we have been working in the "Overview" tab. The next tab, "Data Laboratory," allows you to view the data in a table format, add or remove columns and rows, edit or filter them using regular expressions, and export data to CSV (or import from CSV, which is very convenient).
 
 ![](./img/gephi15.png)
 
-Наконец, в последней вкладке, "Просмотр", можно увидеть красиво отрисованный граф, а не рабочую версию. Единственное что -- отображение меток придется включить заново, но уже в этой вкладке на панели инструментов слева. Если у вас большой граф, то лучше снять галочку с параметра "Пропорциональный размер" и немного увеличить шрифт. Остальные параметры подписей можно настроить по своему вкусу.
+Finally, in the last tab, "Preview," you can see a nicely rendered version of the graph instead of the working version. The only thing to keep in mind is that you will need to enable the labels again, but this time using the toolbar on the left within this tab.
+
+If you're working with a large graph, it's best to uncheck the "Proportional size" option and slightly increase the font size. The rest of the label settings can be adjusted to your preference.
 
 ![](./img/gephi17.png)
 
-Скорее всего, сначала вы увидите просто белое поле без графа -- чтобы он отрисовался, нужно нажать кнопку "Обновить" внизу. То же самое нужно делать после любых изменений, если вы хотите их увидеть. Мой граф в итоге выглядит вот так.
+Most likely, at first, you will just see a blank white field without the graph. To render it, you need to click the "Refresh" button at the bottom. The same applies after any changes—if you want to see the updates, you must click "Refresh" again.
 
 ![](./img/gephi16.png)
 
-Он достаточно хорошо интерпретируется:
-
-* темно-зеленые узлы -- это мои однокурсники из Вышки
-* светло-зеленые узлы -- это мои однокурсники из МГУ
-* розовые узлы -- это разные лингвисты \(преподаватели Вышки, студенты Вышки не с моего курса, студенты ОТиПЛа МГУ\)
-* бирюзовые узлы -- это мои друзья из МГУ курсом старше
-* голубые узлы -- это разные кельтологи и скандинависты
-* бордовые узлы -- это мои однокурсники из СПбГУ
-* оранжевые узлы -- это люди из моего родного города
-* темно-фиолетовые узлы -- это те, с кем я работала на Олимпийских играх в Сочи
-* светло-сиреневые узлы -- те, с кем я ходила в походы
-* желтые узлы -- московские друзья, с которыми я не училась вместе
-
-Если использовать раскладку Force Atlas, то можно гораздо отчетливее увидеть узлы, которые тесно связаны с несколькими сообществами. Например, с тремя моими однокурсниками из МГУ мы продолжили учиться в Вышке: на картинке видно, что от соответствующих узлов в обе стороны идет много связей. А по какому принципу раскрашены узлы в этом варианте?
+The final result is quite easy to interpret.
+If you use the Force Atlas layout, you can more clearly see the nodes that are closely connected to several communities.
 
 ![](./img/graph0909.png)
 
-### Экспорт графа
-
-Граф можно сохранить в png или в pdf: если вам нужен небольшой файл и не важна детальность, то лучше выбрать png, а если вы хотите рассматривать граф при каком угодно приближении без потери качества, то лучше выбрать pdf. Экспортировать граф можно двумя способами: с помощью соответствующей кнопки в левом нижнем углу в "Просмотре" или в меню "Файл &gt; Экспорт".
+### Exporting a graph
+The graph can be saved as a PNG or PDF. If you need a small file and detail is not important, it's better to choose PNG. However, if you want to examine the graph at any zoom level without losing quality, it's better to choose PDF. The graph can be exported in two ways: using the corresponding button in the bottom left corner of the "View" tab or via the "File > Export" menu.
 
 ![](./img/gephi19.png)
 
-Кроме того, можно экспортировать не статичную картинку, а динамический граф и выложить его в интернет -- как исследование поэм Макферсона, помните? Для этого нужно установить плагин **Sigma** **Exporter** в меню "Сервис &gt; Подключаемые модули &gt; Доступные подключаемые модули" и перезагрузить Gephi. Не забудьте сохранить ваш проект \("Файл &gt; Сохранить проект", или Ctrl + S\) перед перезагрузкой, чтобы не потерять работу!
+Additionally, you can export not just a static image, but a dynamic graph and upload it to the internet — just like the Macpherson poems study, remember? To do this, you need to install the Sigma Exporter plugin from the "Tools > Plugins > Available Plugins" menu and then restart Gephi. Don't forget to save your project ("File > Save Project" or Ctrl + S) before restarting, to avoid losing your work!
 
 ![](./img/gephi20.png)
 
-После этого можно сохранять граф в Sigma \("Файл &gt; Экспорт &gt; Sigma.js template"\).
+After that, you can save the graph in Sigma by selecting "File > Export > Sigma.js template".
 
 ![](./img/gephi21.png)
 
-В появившемся окне нужно указать путь к папке, куда вы хотите экспортировать проект, и данные для легенды: название и кратое описание графа, а также то, что обозначают узлы, ребра и их цвета.
+In the window that appears, you need to specify the folder path where you want to export the project, as well as the details for the legend: the title and a brief description of the graph, as well as what the nodes, edges, and their colours represent.
 
 ![](./img/gephi22png.png)
 
-После этого в указанной директории появится папка network. Все файлы из этой папки нужно загрузить в новый репозиторий на гитхабе. Если вы забыли что-то указать при экспорте, это можно будет поправить в файле config.json вручную, открыв его в блокноте. Вот список файлов, который должен оказаться в вашем репозитории.
+After this, a folder named "network" will appear in the specified directory. All the files from this folder need to be uploaded to a new repository on GitHub. If you forgot to include something during the export, you can manually edit the `config.json` file by opening it in a text editor. Here is a list of the files that should be in your repository.
 
 ![](./img/gh.png)
 
-Теперь, когда все нужные файлы лежат в репозитории, отправляемся в его настройки и прокручиваем их вниз до пункта GitHub Pages, а затем в Source выбираем Master branch и нажимаем кнопку Save. У вас должно появиться зеленое уведомление с адресом вашей странички формата [https://username.github.io/repository\_name](https://username.github.io/repository_name)
+Now that all the necessary files are in the repository, go to its settings and scroll down to the "GitHub Pages" section. Then, in the "Source" dropdown, select the "Master branch" and click the "Save" button. A green notification should appear with the address of your page in the format: [https://username.github.io/repository\_name](https://username.github.io/repository_name)
 
 ![](./img/gh771.png)
 
 ![](./img/gh677.png)
 
-Получиться должно что-то вот такое. Если хотите, можете поэкспериментировать с файлом index.html, чтобы избавиться от элементов, которые вам не нравятся \(например, от пустого поля в верхней части легенды\).
+It should look something like this. If you want, you can experiment with the `index.html file` to remove elements you don't like (for example, the empty space at the top of the legend).
+
 
 ![](./img/gh6-0-.png)
-
-Обратите внимание, что все селекторы должны работать!
+Please note that all selectors should be functional!
 
 ![](./img/gh556.png)
 
