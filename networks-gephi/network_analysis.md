@@ -1,24 +1,38 @@
 # Network Analysis with Gephi
 
-### What is a graph?
-
-**Graph, or network** is a model consisting of **nodes (vertices)** and the connections between them, or **edges**.
+A **graph, or network** is a data model consisting of **nodes (vertices)** and the connections between them, also called **edges (links, arcs)**. Networks provide clear and intuitive visual representations of relationships, where nodes typically represent individual entities (such as people, organizations, or objects), and edges signify the connections or interactions between them. These networks appear in various contexts, including social, technological, and biological systems.
 
 ![](./img/graph1.png)
 
-Nodes in graphs can be grouped into communities. A **community** is a dense subgraph where all (or almost all) nodes are interconnected. Graphs can be:
+Social network analysis (SNA), or simply network analysis (NA), is a research method used to understand and visualise how networks function, and to identify the most important nodes within them. It involves analysing the connections between entities, as well as the characteristics of the entities themselves.
 
-* directed and undirected (connections as arrows vs connections as lines)
-* connected and disconnected (all nodes are connected vs some nodes are isolated from the main graph)
-* weighted and unweighted (connections have numerical values vs they do not)
+![](https://visiblenetworklabs.com/wp-content/uploads/2023/01/Network-Map-Example-1-1024x614.png)
 
-In this case, metro stations are nodes, and tracks between them are edges. When you calculate travel distance, you are working with a weighted graph: each track segment is assigned a time value in minutes.
+_Image source: [VisibleNetworksLabs](https://visiblenetworklabs.com/guides/social-network-analysis-101/)_
+
+Nodes in graphs can be grouped into communities. A **community** is a dense subgraph where all (or almost all) nodes are interconnected. 
+
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*skhjgApyDIPbJNolIZCF5w.png)
+
+_Image source: [TDS Archive]([https://visiblenetworklabs.com/guides/social-network-analysis-101/](https://medium.com/data-science/community-detection-algorithms-9bd8951e7dae))_
+
+Graphs can be described in the following terms:
+
+* **directed** and **undirected** (connections as arrows vs connections as lines)
+* **connected** and **disconnected** (all nodes are connected vs some nodes are isolated from the main graph)
+* **weighted** and **unweighted** (connections have numerical values vs they do not)
+
+For example, if you look at the London Underground, the stations can be considered nodes, and the tracks connecting them serve as edges. When calculating travel time, you are working with a weighted graph, where each track segment between two stations is assigned a time value in minutes.
 
 ![](./img/london_metro.jpg)
+
+_Image source: [Transport for London]([https://visiblenetworklabs.com/guides/social-network-analysis-101/](https://tfl.gov.uk/))_
 
 And this is what the internet looks like!
 
 ![](./img/rsz_internet_network.png)
+
+_Image source: Wikimedia_
 
 ### Метрики
 
