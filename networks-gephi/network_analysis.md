@@ -78,27 +78,25 @@ A coappearance network of characters in the novel _Les Misérables_ by Victor Hu
 
 ![](./img/grapg6.png)
 
+#### gexf
+
 A WebAtlas study realized for the European Science in Society program ([WebAtlas_EuroSiS.gexf](./data/WebAtlas_EuroSiS.gexf)).
 
 ![](./img/graph7.png)
 
-### Gephi
+## Gephi
 
-**Gephi** -- программа для визуализации графов. Скачать ее можно [отсюда](https://gephi.org/), а [вот здесь ](https://gephi.org/users/)инструкция по работе с ней. Мы будем тренироваться на графе по роману "Отверженные" Виктора Гюго, который можно скачать [отсюда](http://www-personal.umich.edu/~mejn/netdata/lesmis.zip). Еще больше интересных графовых данных для самостоятельной работы вы найдете [вот здесь](http://www-personal.umich.edu/~mejn/netdata/) и [вот здесь](http://konect.uni-koblenz.de/).
+**Gephi** is a free open source program for visualising network. You can download the latest versiont [from the official website](https://gephi.org/), where you will also find [a user guide](https://gephi.org/users/). We will be working with a graph based on Victor Hugo's novel Les Misérables, whoich you can find in the _data_ folder in this repository, or, alternatively, [download here](http://www-personal.umich.edu/~mejn/netdata/lesmis.zip).  You can find more interesting graph data to explore and practice, for example, [on the University of Michigan website](http://www-personal.umich.edu/~mejn/netdata/).
 
-С помощью Gephi можно делать очень красивые и наглядные картинки. Вот пример из работы польского специалиста по стилометрии Яна Рыбицки -- хронология романов Ч. Диккенса, построенная по наиболее частотным словам в тексте.
+With Gephi, you can create very beautiful and informative visualisations. Here is an example from the work of Polish stylometry expert Jan Rybicki: a chronology of Charles Dickens' novels, built using the most frequent words in the text.
 
 ![](./img/image2.png)
 
-А это граф русских романов XIX века от команды тьюториала по стилометрии на II московско-тартусской школе по Digital Humanities.
+Graphs created in Gephi can not only be saved as images or PDFs but also published online (for example, on GitHub) using the Sigma plugin.  Here is [an example of an interactive graph](https://yosej.github.io/Ossian_Full_Network/) based on the Ossian poems by James Macpherson.
 
-![](./img/import1111.png)
+Now, let's take a look at how to do all of this.
 
-Графы, созданные в Gephi, можно не только сохранять как картинки или pdf, но и публиковать в интернете \(например, на GitHub\) с помощью плагина Sigma. Вот [пример интерактивного графа](https://yosej.github.io/Ossian_Full_Network/) по Оссиановским поэмам Макферсона.
-
-А теперь давайте разберемся, как всё это это сделать.
-
-### Работа с графом в Gephi
+### Getting started
 
 При запуске программы появляется приветственное окошко, где нужно выбрать "Открыть файл с графом". Я буду показывать все на примере графа своих друзей Вконтакте, выкачанного с помощью [вот этого приложения](https://vk.com/app3861133).
 
