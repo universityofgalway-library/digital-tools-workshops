@@ -1,24 +1,24 @@
-# Сетевой анализ
+# Network Analysis with Gephi
 
-### Что такое граф?
+### What is a graph?
 
-**Граф, или сеть** -- это модель, состоящая из **узлов** и связей между ними, или **ребер**. По-английски это называется _nodes \(vertices\)_ и _edges_.
+**Graph, or network** is a model consisting of **nodes (vertices)** and the connections between them, or **edges**.
 
-![](/img/graph_1.png)
+![](./img/graph_1.png)
 
-Узлы в графах могут группироваться в сообщества. **Сообщество** -- это плотный подграф, где все \(или почти все\) узлы связаны между собой. Графы бывают:
+Nodes in graphs can be grouped into communities. A **community** is a dense subgraph where all (or almost all) nodes are interconnected. Graphs can be:
 
-* направленные и ненаправленные \(связи-стрелочки vs обычные связи\)
-* связанные и несвязанные \(все узлы связаны vs есть узлы, которые оторваны от основного графа\).
-* взвешенные и невзвешенные \(связи имеют некоторое числовое значение или нет\)
+* directed and undirected (connections as arrows vs connections as lines)
+* connected and disconnected (all nodes are connected vs some nodes are isolated from the main graph)
+* weighted and unweighted (connections have numerical values vs they do not)
 
-В лекции вы видели много разнообразных примеров графов, вот еще один. Здесь станции -- это узлы, а перегоны -- ребра. Когда вы рассчитываете расстояние в пути, вы работаете со взвешенным графом: каждый перегон оценивается в несколько минут.
+In this case, metro stations are nodes, and tracks between them are edges. When you calculate travel distance, you are working with a weighted graph: each track segment is assigned a time value in minutes.
 
-![](/img/pastedImage0.png)
+![](./img/london_metro.jpg)
 
-А вот так выглядит интернет!
+And this is what the internet looks like!
 
-![](/img/rsz_internet_network.png)
+![](./img/rsz_internet_network.png)
 
 ### Метрики
 
