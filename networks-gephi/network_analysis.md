@@ -6,7 +6,7 @@ A **graph, or network** is a data model consisting of **nodes (vertices)** and t
 
 ![](./img/graph1.png)
 
-And this is what the internet looks like!
+For example, this is what the internet looks like, represented as a graph of IP addresses.
 
 ![](./img/rsz_internet_network.png)
 
@@ -20,17 +20,16 @@ Graphs can be described in the following terms:
 * **connected** and **disconnected** (all nodes are connected vs some nodes are isolated from the main graph)
 * **weighted** and **unweighted** (connections have numerical values vs they do not)
 
-For example, if you look at the London Underground, the stations can be considered nodes, and the tracks connecting them serve as edges. When calculating travel time, you are working with a weighted graph, where each track segment between two stations is assigned a time value in minutes.
+For example, looking at the London Underground, stations can be viewed as nodes, and tracks connecting them serve as edges. When calculating travel time, you are working with a weighted graph, where each track segment between two stations is assigned a time value in minutes.
 
 ![](./img/london_metro.jpg)
 
 _Image source: [Transport for London](https://tfl.gov.uk/)_
 
 
-
 ### Social network analysis
 
-Social network analysis (SNA), or simply network analysis (NA), is a research method used to understand and visualise how networks function, and to identify the most important nodes within them. It involves analysing the connections between entities, as well as the characteristics of the entities themselves.
+**Social network analysis (SNA)**, or simply **network analysis (NA)**, is a research method used to understand and visualise how networks function, and to identify the most important nodes within them. It involves analysing the connections between entities, as well as the characteristics of the entities themselves.
 
 ![](https://visiblenetworklabs.com/wp-content/uploads/2023/01/Network-Map-Example-1-1024x614.png)
 
