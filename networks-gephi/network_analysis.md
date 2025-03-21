@@ -1,20 +1,18 @@
 # Network Analysis with Gephi
 
+### What is a graph?
+
 A **graph, or network** is a data model consisting of **nodes (vertices)** and the connections between them, also called **edges (links, arcs)**. Networks provide clear and intuitive visual representations of relationships, where nodes typically represent individual entities (such as people, organizations, or objects), and edges signify the connections or interactions between them. These networks appear in various contexts, including social, technological, and biological systems.
 
 ![](./img/graph1.png)
 
-Social network analysis (SNA), or simply network analysis (NA), is a research method used to understand and visualise how networks function, and to identify the most important nodes within them. It involves analysing the connections between entities, as well as the characteristics of the entities themselves.
+And this is what the internet looks like!
 
-![](https://visiblenetworklabs.com/wp-content/uploads/2023/01/Network-Map-Example-1-1024x614.png)
+![](./img/rsz_internet_network.png)
 
-_Image source: [VisibleNetworksLabs](https://visiblenetworklabs.com/guides/social-network-analysis-101/)_
+_Image source: Wikimedia_
 
-Nodes in graphs can be grouped into communities. A **community** is a dense subgraph where all (or almost all) nodes are interconnected. 
-
-![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*skhjgApyDIPbJNolIZCF5w.png)
-
-_Image source: [TDS Archive]([https://visiblenetworklabs.com/guides/social-network-analysis-101/](https://medium.com/data-science/community-detection-algorithms-9bd8951e7dae))_
+### What types of graphs are there?
 
 Graphs can be described in the following terms:
 
@@ -26,13 +24,25 @@ For example, if you look at the London Underground, the stations can be consider
 
 ![](./img/london_metro.jpg)
 
-_Image source: [Transport for London]([https://visiblenetworklabs.com/guides/social-network-analysis-101/](https://tfl.gov.uk/))_
+_Image source: [Transport for London](https://tfl.gov.uk/)_
 
-And this is what the internet looks like!
 
-![](./img/rsz_internet_network.png)
 
-_Image source: Wikimedia_
+### Social network analysis
+
+Social network analysis (SNA), or simply network analysis (NA), is a research method used to understand and visualise how networks function, and to identify the most important nodes within them. It involves analysing the connections between entities, as well as the characteristics of the entities themselves.
+
+![](https://visiblenetworklabs.com/wp-content/uploads/2023/01/Network-Map-Example-1-1024x614.png)
+
+_Image source: [VisibleNetworksLabs](https://visiblenetworklabs.com/guides/social-network-analysis-101/)_
+
+### Communities
+
+Nodes in graphs can be grouped into communities. A **community** is a dense subgraph where all (or almost all) nodes are interconnected. 
+
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*skhjgApyDIPbJNolIZCF5w.png)
+
+_Image source: [TDS Archive](https://medium.com/data-science/community-detection-algorithms-9bd8951e7dae)_
 
 ### Метрики
 
