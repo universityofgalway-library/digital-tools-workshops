@@ -4,7 +4,7 @@
 
 **Graph, or network** is a model consisting of **nodes (vertices)** and the connections between them, or **edges**.
 
-![](./img/graph_1.png)
+![](./img/graph1.png)
 
 Nodes in graphs can be grouped into communities. A **community** is a dense subgraph where all (or almost all) nodes are interconnected. Graphs can be:
 
