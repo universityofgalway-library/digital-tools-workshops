@@ -161,8 +161,12 @@ When we imported the Game of Thrones dataset from `csv`, the first column contai
 
 ![](./img/gephi22.png)
 
+First, **choose the column from which you'd like to copy data**. Then, in the pop-up window, choose the destination column.
+
 ![](./img/gephi23.png) &nbsp;&nbsp;&nbsp;&nbsp;
 ![](./img/gephi24.png)
+
+After this manipulation, the table will look like this.
 
 ![](./img/gephi25.png)
 
