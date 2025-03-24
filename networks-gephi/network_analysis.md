@@ -70,7 +70,7 @@ There is a number of ways to measure the importance of a node.
 
 ### Graph formats
 
-Graphs are usually stored in text files (.gml, .csv) or in XML files (.graphml, .gexf), where all the nodes, edges, and their attributes – for example, the name of a node or the weight of an edge – are listed. This is what .gml and .gexf files look like, respectively.
+Graphs are usually stored in text files (`.gml`, `.csv`) or in XML files (`.graphml`, `.gexf`), where all the nodes, edges, and their attributes – for example, the name of a node or the weight of an edge – are listed. This is what `.gml`, `.gexf` and `.csv` files look like, respectively.
 
 #### gml
 
@@ -86,7 +86,7 @@ The same graph in GEXF format ([lesmis.gexf](./data/lesmis.gexf)).
 
 #### csv
 
-A co-occurrence network of the characters in the Game of Thrones ([./game_of_thrones/book1.csv](./data/game_of_thrones/book1.csv)).
+A co-occurrence network of the characters in the _Game of Thrones_ ([./game_of_thrones/book1.csv](./data/game_of_thrones/book1.csv)).
 
 ![](./img/graph8.png)
 
