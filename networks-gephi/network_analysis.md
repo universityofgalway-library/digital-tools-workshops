@@ -58,10 +58,14 @@ In graph theory and network analysis, the following metrics are commonly used.
 
 There is a number of ways to measure the importance of a node.
 
-* **Degree centrality**:  the more connections a node has, the more important it is.
-* **Closeness centrality**: the more central a node is (i.e., the shorter the path from it to all other nodes), the more important it is.
-* **Betweenness centrality**: the more often a node connects two other nodes, the more important it is.
-* **Eigencentrality**: " the more friends your friends have, the more important you are".
+* **Degree centrality**:  the more connections a node has, the more important it is (A).
+* **Closeness centrality**: the more central a node is (i.e., the shorter the path from it to all other nodes), the more important it is (B).
+* **Betweenness centrality**: the more often a node connects two other nodes, the more important it is (C).
+* **Eigencentrality**: "the more friends your friends have, the more important you are" (D).
+
+<img src="https://www.martingrandjean.ch/wp-content/uploads/2013/06/Centrality.png" style="height: 450px; margin-right: 10px;"/>
+
+_Image source: Claudio Rocchini / Wikimedia._
 
 **Assortativity coefficient** determines with whom the "important" nodes are connected: if they are connected with other "important" nodes, the coefficient value is high, otherwise, it is low.
 
