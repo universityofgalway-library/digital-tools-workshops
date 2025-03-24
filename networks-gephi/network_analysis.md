@@ -6,12 +6,6 @@ A **graph, or network** is a data model consisting of **nodes (vertices)** and t
 
 <img src="./img/graph1.png" style="height: 300px; margin-right: 10px;"/>
 
-For example, this is what the internet looks like, represented as a graph of IP addresses.
-
-![](./img/rsz_internet_network.png)
-
-_Image source: Wikimedia_
-
 ### What types of graphs are there?
 
 Graphs can be described in the following terms:
@@ -28,6 +22,12 @@ For example, looking at the London Underground, stations can be viewed as nodes,
 ![](./img/london_metro.jpg)
 
 _Image source: [Transport for London](https://tfl.gov.uk/)_
+
+And this is what the internet looks like, represented as a graph of IP addresses.
+
+![](./img/rsz_internet_network.png)
+
+_Image source: Wikimedia_
 
 ### Communities
 
