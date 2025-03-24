@@ -103,7 +103,7 @@ A chronology of Charles Dickens' novels built using the most frequent words in t
 
 ![](https://sites.tufts.edu/digitalhumanities/files/2017/12/Screen-Shot-2017-12-20-at-10.28.02-AM.png)
 
-[An air transportation network](https://www.martingrandjean.ch/connected-world-air-traffic-network/) based on openflights.org data, where nodes represent airports, node sizes reflect the number of routes and colours roughly represent continents, by Dr. Martin Grandjean.
+[An air transportation network](https://www.martingrandjean.ch/connected-world-air-traffic-network/) based on [openflights.org](https://openflights.org/) data, where nodes represent airports, node sizes reflect the number of routes and colours roughly represent continents, by Dr. Martin Grandjean.
 
 ![](https://www.martingrandjean.ch/wp-content/uploads/2016/05/airports-network-small.png)
 
