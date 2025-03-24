@@ -19,6 +19,8 @@ Graphs can be described in the following terms:
 * **directed** and **undirected** (connections as arrows vs connections as lines)
 * **connected** and **disconnected** (all nodes are connected vs some nodes are isolated from the main graph)
 * **weighted** and **unweighted** (connections have numerical values vs they do not)
+* **complete** (every node is connected to every other node, but there are no self-loops)
+* **bipartite** (there are two subsets of nodes, and every edge connects a node from subset A to a node from subset B)
 
 For example, looking at the London Underground, stations can be viewed as nodes, and tracks connecting them serve as edges. When calculating travel time, you are working with a weighted graph, where each track segment between two stations is assigned a time value in minutes.
 
