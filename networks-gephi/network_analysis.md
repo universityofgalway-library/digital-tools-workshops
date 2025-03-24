@@ -194,18 +194,37 @@ After these adjustments, you should get a visualisation similar to this. You can
 
 ### Layout
 
-By default, the graph layout is random, i.e. the position of nodes and their proximity to each other do not convey any meaning. Let's make the visualization more meaningful using a layout algorithm. The Layout menu is located in the bottom left corner. For example, the Fruchterman-Reingold algorithm arranges nodes in a circular pattern. Notice how nodes of the same colour, belonging to the same community, are naturally drawn closer together.
+By default, the graph layout is random, i.e. the position of nodes and their proximity to each other do not convey any meaning. Let's make the visualization more meaningful using a layout algorithm. The "Layout" menu is located in the bottom left corner. Here is a summary of some of the layout algorithms available in Gephi 0.10 (you can download the [official tutorial in PDF](https://gephi.org/tutorials/gephi-tutorial-layouts.pdf) for a more detailed explanation).
+
+1. **Contraction**: brings nodes closer together
+2. **Expansion**: the opposite of contraction, increases space between nodes
+3. **ForceAtlas**: a force-directed algorithm, ideal for most small world/scale-free networks
+4. **ForceAtlas 2**: an improved version of ForceAtlas, offering faster performance and better scalability.
+5. **Fruchterman-Reingold**: another force-directed layout that distributes nodes in a way that minimizes edge crossings; works with undirected graphs
+6. **Label Adjust**: stops labels from overlapping each other
+7. **Noverlap**: stops nodes from overlapping each other
+8. **OpenOrd**: a layout similar to Fruchterman-Reingold that emphasizes community structures (clusters) within the network; works with undirected graphs
+9. **Random Layout**: randomises the position of nodes
+10. **Rotate**: rotates the graph bu 90 clockwise
+11. **YifanHu**: a fast algorithm that’s particularly useful for large networks; combines a force-directed model with a graph coarsening technique (multilevel algorithm) to reduce the complexity
+12. **YifanHu Proportional**: similar to YifanHu, but node sizes are proportional to a specific metric or attribute value
+13. ***Circular Layout**: orders the nodes by any metric or attribute and positions them in a circle; useful for emphasizing cyclic structures
+14. ***Geographic Map**: if your nodes have geographical attributes, this layout positions them based on their real-world locations
+
+*You have to install plugins from `Tools > Plugins > Available Plugins` to use these layout algorithms.
+
+Let's run the Fruchterman-Reingold algorithm and observe how nodes of the same colour, belonging to the same community, are being drawn closer together.
 
 ![](./img/gephi13.png)&nbsp;&nbsp;&nbsp;&nbsp;
 ![](./img/gephi14.png)
 
 ![](./img/gephi15.png)
 
-Here’s another useful algorithm: Force Atlas. By the way, you don’t have to wait for the layout process to finish completely (spoiler: [it can run indefinitely]([https://www.dropbox.com/s/ek84sjxsanm1rda/force_layout.mp4?dl=0](https://www.dropbox.com/scl/fi/3zoo9hvigtqiut8mi68gb/force_layout.mp4?rlkey=rh5hhxxlruunowc52mzueinjd&st=6doi3e5h&dl=0))). If you're happy with the result, you can simply press "Stop".
+By the way, you don’t have to wait for the layout process to finish: if you're happy with the result, you can simply press "Stop" for algorithms that don't stop automatically, like Force Atlas, or cancel the process for others, like Fruchterman-Reingold. Otherwise, [they can run indefinitely](https://www.dropbox.com/scl/fi/3zoo9hvigtqiut8mi68gb/force_layout.mp4?rlkey=rh5hhxxlruunowc52mzueinjd&st=6doi3e5h&dl=0).
 
 ![](./img/gephi16.png)
 
-If you feel that the nodes are too close together, you can use the "Expansion" function in the "Layout" window.
+If you feel that the nodes are too close together, you can use the "Expansion".
 
 ![](./img/gephi19.png)
 
@@ -284,7 +303,8 @@ Please note that all selectors should be functional!
 1. Martin Grandjean. (2021). [Introduction to Social Network Analysis: Basics and Historical Specificities.](https://www.martingrandjean.ch/introduction-to-social-network-analysis/) [video & pdf]
 2. Andrew Beveridge. (2020). [Network of Thrones. A Song of Maths and Westeros.](https://networkofthrones.com/)
 3. [Gephi Documentation](https://docs.gephi.org/)
-4. [Gephi tutorials by users](https://gephi.org/users/)
-5. Brown University Libraries. [Network Analysis with Gephi](https://libguides.brown.edu/gephi)
+4. [Gephi tutorials](https://gephi.org/users/) (official & created by users)
+5. Billy Mosse. (2020). [A quick tutorial on Gephi layouts — using a Q&A StackOverflow dataset.](https://medium.com/data-science/a-quick-tutorial-on-gephi-layouts-daa87fec5a20) Medium.
+6. Brown University Libraries. [Network Analysis with Gephi](https://libguides.brown.edu/gephi)
 8. Christine Egan. (2023). [Social Network Analysis and Visualization with Python.](https://christineegan42.medium.com/social-network-analysis-and-visualization-with-python-b7769a417aff) Medium.
 9. Mohammed Saqr, Sonsoles López-Pernas, Miguel Ángel Conde-González & Ángel Hernández-García. (2024). [Social Network Analysis: A Primer, a Guide and a Tutorial in R.](https://link.springer.com/chapter/10.1007/978-3-031-54464-4_15) In: Saqr, M., López-Pernas, S. (eds) Learning Analytics Methods and Tutorials. Springer, Cham. https://doi.org/10.1007/978-3-031-54464-4_15
