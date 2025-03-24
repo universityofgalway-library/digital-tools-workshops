@@ -19,8 +19,9 @@ Graphs can be described in the following terms:
 * **directed** and **undirected** (connections as arrows vs connections as lines)
 * **connected** and **disconnected** (all nodes are connected vs some nodes are isolated from the main graph)
 * **weighted** and **unweighted** (connections have numerical values vs they do not)
-* **complete** (every node is connected to every other node, but there are no self-loops)
 * **bipartite** (there are two subsets of nodes, and every edge connects a node from subset A to a node from subset B)
+* **complete** (every node is connected to every other node, but there are no self-loops)
+* **small world** (each node has few direct neighbours, but its neighbours are very likely to be connected to each other andmost nodes can be reached from any other node in just a few steps)
 
 For example, looking at the London Underground, stations can be viewed as nodes, and tracks connecting them serve as edges. When calculating travel time, you are working with a weighted graph, where each track segment between two stations is assigned a time value in minutes.
 
@@ -209,7 +210,7 @@ By default, the graph layout is random, i.e. the position of nodes and their pro
 11. **YifanHu**: a fast algorithm that’s particularly useful for large networks; combines a force-directed model with a graph coarsening technique (multilevel algorithm) to reduce the complexity
 12. **YifanHu Proportional**: similar to YifanHu, but node sizes are proportional to a specific metric or attribute value
 13. ***Circular Layout**: orders the nodes by any metric or attribute and positions them in a circle; useful for emphasizing cyclic structures
-14. ***Geographic Map**: if your nodes have geographical attributes, this layout positions them based on their real-world locations
+14. ***Geo Layout**: if your nodes have geographical attributes, this layout positions them based on their real-world locations
 
 *You have to install plugins from `Tools > Plugins > Available Plugins` to use these layout algorithms.
 
