@@ -241,7 +241,7 @@ The image has become more representative, but it clearly lacks node **labels**. 
 
 ![](./img/gephi21.png)
 
-Now, if we go back to "Overview", the graph will look like that.
+Now, the graph will look like this.
 
 ![](./img/gephi26.png)
 
