@@ -93,11 +93,23 @@ A co-occurrence network of the characters in the _Game of Thrones_ ([./game_of_t
 
 ## Gephi
 
-**Gephi** is a free open source program for visualising network. You can download the latest version [from the official website](https://gephi.org/), where you will also find [a user guide](https://gephi.org/users/). With Gephi, you can create very beautiful and informative visualisations. Here is an example from the work of Polish stylometry expert Jan Rybicki: a chronology of Charles Dickens' novels, built using the most frequent words in the text.
+**Gephi** is a free open-source program for visualising networks. You can download the latest version [from the official website](https://gephi.org/), where you will also find [a user guide](https://gephi.org/users/). With Gephi, you can create very beautiful and informative visualisations for your research — here are a few examples.
+
+A chronology of Charles Dickens' novels built using the most frequent words in the text by Dr. Jan Rybicki.
 
 ![](./img/image2.png)
 
-Graphs created in Gephi can not only be saved as images or PDFs but also published online (for example, on GitHub) using the Sigma plugin.  Here is [an example of an interactive graph](https://yosej.github.io/Ossian_Full_Network/) based on the Ossian cycle of epic poems by James Macpherson.
+[A network of thematic connections in artworks from the Smithsonian American Art Museum, made between 1900 and 1935](https://matthewlincoln.net/2013/11/12/networks-of-the-smithsonian-american-art-museum.html), by Dr. Matthew Lincoln.
+
+![](https://sites.tufts.edu/digitalhumanities/files/2017/12/Screen-Shot-2017-12-20-at-10.28.02-AM.png)
+
+[An air transportation network based on openflights.org data](https://www.martingrandjean.ch/connected-world-air-traffic-network/), where nodes represent airports, node sizes reflect the number of routes and colours represent continents, by Dr. Martin Grandjean.
+
+![](https://www.martingrandjean.ch/wp-content/uploads/2016/05/airports-network-small.png)
+
+Graphs created in Gephi can also published online (for example, on GitHub) using the Sigma plugin. Here is [an example of an interactive graph](https://yosej.github.io/Ossian_Full_Network/), created by Dr. Joseph Yose, based on the Ossian cycle of epic poems by James Macpherson.
+
+![](./img/ossian.png)
 
 Now, let's take a look at how to do all of this. For this workshop, we will be working with co-occurrence network of the characters in the first book of the _Game of Thrones_ series, which you can download [from this repository](./data/game_of_thrones) or [from Kaggle](https://www.kaggle.com/datasets/mmmarchetti/game-of-thrones-dataset). Feel free to use your own data or any other dataset available in the `data` folder in this repository or from external resources.  Below are a few websites and repositories where you can find more interesting graph data to explore and practice:
 
