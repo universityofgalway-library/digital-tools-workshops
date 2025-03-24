@@ -95,7 +95,7 @@ A co-occurrence network of the characters in the _Game of Thrones_ ([./game_of_t
 
 **Gephi** is a free open-source program for visualising networks. You can download the latest version [from the official website](https://gephi.org/), where you will also find [a user guide](https://gephi.org/users/). With Gephi, you can create very beautiful and informative visualisations for your research — here are a few examples.
 
-A chronology of Charles Dickens' novels built using the most frequent words in the text by Dr. Jan Rybicki.
+[A chronology of Charles Dickens' novels](https://dhd2016.de/abstracts/EADH_01.html) built using the most frequent words in the text by Dr. Jan Rybicki.
 
 ![](./img/image2.png)
 
