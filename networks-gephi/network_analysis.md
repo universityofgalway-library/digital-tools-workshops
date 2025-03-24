@@ -28,6 +28,14 @@ For example, looking at the London Underground, stations can be viewed as nodes,
 
 _Image source: [Transport for London](https://tfl.gov.uk/)_
 
+### Communities
+
+Nodes in graphs can be grouped into communities. A **community** is a dense subgraph where all (or almost all) nodes are interconnected. 
+
+<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*skhjgApyDIPbJNolIZCF5w.png" style="height: 300px; margin-right: 10px;"/>
+
+_Image source: [TDS Archive](https://medium.com/data-science/community-detection-algorithms-9bd8951e7dae)_
+
 
 ### Social network analysis
 
@@ -37,13 +45,6 @@ _Image source: [Transport for London](https://tfl.gov.uk/)_
 
 _Image source: [VisibleNetworksLabs](https://visiblenetworklabs.com/guides/social-network-analysis-101/)_
 
-### Communities
-
-Nodes in graphs can be grouped into communities. A **community** is a dense subgraph where all (or almost all) nodes are interconnected. 
-
-<img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*skhjgApyDIPbJNolIZCF5w.png" style="height: 300px; margin-right: 10px;"/>
-
-_Image source: [TDS Archive](https://medium.com/data-science/community-detection-algorithms-9bd8951e7dae)_
 
 ### Graph metrics
 
