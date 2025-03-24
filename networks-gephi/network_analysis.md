@@ -78,18 +78,18 @@ A coappearance network of characters in the novel _Les Misérables_ by Victor Hu
 
 ![](./img/graph6.png)
 
+#### gexf
+
+The same graph in GEXF format ([lesmis.gexf](./data/lesmis.gexf)).
+
+![](./img/graph5.png)
+
 #### csv
 
-A co-occurrence network of the characters in the Game of Thrones ([GoT_Book1.csv](./data/GoT_Book1.csv)).
+A co-occurrence network of the characters in the Game of Thrones ([./game_of_thrones/book1.csv](./data/game_of_thrones/book1.csv)).
 
 ![](./img/graph8.png)
 
-
-#### gexf
-
-A WebAtlas study for the European Science in Society program ([WebAtlas_EuroSiS.gexf](./data/WebAtlas_EuroSiS.gexf)).
-
-![](./img/graph5.png)
 
 ## Gephi
 
