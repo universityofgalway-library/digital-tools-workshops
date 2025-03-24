@@ -89,7 +89,7 @@ A co-occurrence network of the characters in the Game of Thrones ([GoT_Book1.csv
 
 A WebAtlas study for the European Science in Society program ([WebAtlas_EuroSiS.gexf](./data/WebAtlas_EuroSiS.gexf)).
 
-![](./img/graph7.png)
+![](./img/graph5.png)
 
 ## Gephi
 
