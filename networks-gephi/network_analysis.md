@@ -139,22 +139,24 @@ After importing, Gephi will display a report with the graph's characteristics, a
 
 ![](./img/gephi3.png)
 
+**NB! Gephi does not have an "Undo" button**, so be careful with changes to avoid having to redo everything from scratch!
+
 ### `Overview` tab
 
-Immediately after loading, the graph will look like this. **NB! Gephi does not have an "Undo" button**, so be careful with changes to avoid having to redo everything from scratch!
+Immediately after loading, the graph will open in the "Overview" tab. It will look like this.
 
 ![](./img/gephi4.png)
 
 ### `Data Laboratory` tab
 
-This tab is for manipulating source data, for example: 
+Before working with the graph, we may need to make some adjustments. This can be done in the "Data Laboratory" tab, which is designed for manipulating source data. For example:
 
 * adding nodes and edges manually adding, deleting and merging columns;
 * creating new columns based on regular expressions;
 * editing text and numbers in the cells;
 * importing and exporting data as a spreadsheet.
 
-When we loaded the Game of Thrones dataset from `csv`, the first column with character names was interpreted as ID, but there was no additional "Label" column that we will later need to display node labels. To create it, we can copy the contents of the ID column into a new column called "Label" in the "Data Laboratory". Additionally, you can replace all dashes with whitespaces in the "Label" column.
+When we imported the Game of Thrones dataset from `csv`, the first column containing character names was interpreted as the ID, but there was no separate "Label" column, which we will need later to display node labels. To create it, we will duplicate the contents of the ID column into a new column called "Label" in the "Data Laboratory" tab. Additionally, you can replace all dashes with spaces in the "Label" column for better readability.
 
 ![](./img/gephi22.png)
 
@@ -177,12 +179,12 @@ After changing the colours, your graph will look like this.
 
 ![](./img/gephi10.png)
 
-In the bottom-right corner, you will see a small label "Palette." By clicking on it, you can choose the colours that the nodes will be coloured in. Default palettes have only 8 colours, but if you have a larger graph, you may want more colours. For such cases, Gephi provides the option to generate a palette: to have as many colours as there are different values for the selected attribute, simply uncheck "Limit number of colours," then click Generate and OK. I want to colour the nodes according to their community, and there are 40 communities in my graph (remember, we calculated the modularity?), so I will generate a palette with 40 colours. You can also choose the style of the palette (under the Presets parameter): pastel tones, dark colours, vivid colours, etc.
+In the bottom-right corner, you will see a small label "Palette." By clicking on it, you can choose the colours that the nodes will be coloured in. Default palettes have only 8 colours, but if you have a larger graph, you may want more colours. For such cases, Gephi provides the option to generate a palette: to have as many colours as there are different values for the selected attribute, simply uncheck "Limit number of colours," then click "Generate" and "OK". You can also choose the style of the palette (under the Presets parameter): pastel tones, dark colours, vivid colours, etc.
 
 ![](./img/gephi8.png) &nbsp;&nbsp;&nbsp;&nbsp;
 ![](./img/gephi9.png)
 
-Now you can adjust the node sizes — by default, they are all the same. To do this, click on the icon with circles (to the right of the palette) in the "Appearance" tab on the left panel. The remaining two icons control the colour and size of the labels.
+Now you can adjust the node sizes — by default, they are all the same. To do this, click on the icon with circles (to the right of the palette) in the "Appearance" window on the left panel. The remaining two icons control the colour and size of the labels.
 
 ![](./img/gephi11.png)
 
@@ -203,7 +205,7 @@ Here’s another useful algorithm: Force Atlas. By the way, you don’t have to 
 
 ![](./img/gephi16.png)
 
-If you feel that the nodes are too close together, you can use the "Expansion" function in the "Layout" tab.
+If you feel that the nodes are too close together, you can use the "Expansion" function in the "Layout" window.
 
 ![](./img/gephi19.png)
 
@@ -219,7 +221,7 @@ Now, if we go back to "Overview", the graph will look like that.
 
 ![](./img/gephi26.png)
 
-After enabling labels, you will likely notice that they overlap. To avoid this, you need to run the "Label Adjust" algorithm. The images below show the graph before and after applying the layout.
+After enabling labels, you will likely notice that they overlap. To avoid this, you need to run the "Label Adjust" algorithm in the "Layout" window. The images below show the graph before and after applying the layout.
 
 ![](./img/gephi28.png)
 
