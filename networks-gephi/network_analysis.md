@@ -278,3 +278,12 @@ Please note that all selectors should be functional!
 ![](./img/gephi43.png)
 
 ## Further reading
+
+1. Martin Grandjean. (2021) [Introduction to Social Network Analysis: Basics and Historical Specificities.](https://www.martingrandjean.ch/introduction-to-social-network-analysis/) [Video & pdf]
+2. Andrew Beveridge. (2020). [Network of Thrones. A Song of Maths and Westeros.](https://networkofthrones.com/)
+3. [Gephi Documentation](https://docs.gephi.org/)
+4. [Gephi tutorials by users](https://gephi.org/users/)
+5. Brown University Libraries. [Network Analysis with Gephi](https://libguides.brown.edu/gephi)
+6. Mohammed Saqr, Sonsoles López-Pernas, Miguel Ángel Conde-González & Ángel Hernández-García. (2024). [Social Network Analysis: A Primer, a Guide and a Tutorial in R.](https://link.springer.com/chapter/10.1007/978-3-031-54464-4_15) In: Saqr, M., López-Pernas, S. (eds) Learning Analytics Methods and Tutorials. Springer, Cham. https://doi.org/10.1007/978-3-031-54464-4_15
+7. Marcos Martins Marchetti. (2020). Game of Thrones: Network Analysis.
+8. Christine Egan. (2023). [Social Network Analysis and Visualization with Python.](https://christineegan42.medium.com/social-network-analysis-and-visualization-with-python-b7769a417aff) Medium.
