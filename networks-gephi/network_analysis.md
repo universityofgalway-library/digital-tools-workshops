@@ -110,118 +110,132 @@ Now, let's take a look at how to do all of this. For this workshop, we will be w
 ### Getting started
 
 When the program is launched, a welcome window appears where you need to select "Open graph file." 
-![](./img/gephi_1.png)
-
-After importing, Gephi will display a report with the graph's characteristics, as well as the number of nodes and edges.
+![](./img/gephi1.png)
 
 ![](./img/gephi2.png)
 
-Immediately after loading, the graph will look like this.
+After importing, Gephi will display a report with the graph's characteristics, as well as the number of nodes and edges.
 
 ![](./img/gephi3.png)
 
-To make the graph more visually informative, you can adjust the colour and the size of the nodes and edges according to their attributes. Let's start by calculating the modularity to divide the graph into communities. This can be done in the "Statistics" tab on the workspace panel on the right.
+Immediately after loading, the graph will look like this.
 
 ![](./img/gephi4.png)
 
-Now let's move on to changing the colour of the nodes and edges. This is done using the palette icon in the "Appearance" tab on the left workspace panel. By default, all nodes and edges are coloured in one colour (Unique), but we will colour them according to the communities they belong to (Partition > Modularity Class). You can also choose any other attribute, such as gender or city (Partition > Gender/City), or colour the nodes according to their degree (Ranking > Degree).
+To make the graph more visually informative, you can adjust the colour and the size of the nodes and edges according to their attributes. Let's start by calculating the modularity to divide the graph into communities. This can be done in the "Statistics" tab on the workspace panel on the right.
 
 ![](./img/gephi5.png)
 
-In the bottom-right corner, you will see a small label "Palette." By clicking on it, you can choose the colours that the nodes will be coloured in. Default palettes have only 8 colours, but for such a large graph, you'll clearly need more. For such cases, Gephi provides the option to generate a palette: to have as many colours as there are different values for the selected attribute, simply uncheck "Limit number of colours," then click Generate and OK. I want to colour the nodes according to their community, and there are 40 communities in my graph (remember, we calculated the modularity?), so I will generate a palette with 40 colours. You can also choose the style of the palette (under the Presets parameter): pastel tones, dark colours, vivid colours, etc.
+Now let's move on to changing the colour of the nodes and edges. This is done using the palette icon in the "Appearance" tab on the left workspace panel. By default, all nodes and edges are coloured in one colour (Unique), but we will colour them according to the communities they belong to (Partition > Modularity Class). You can also choose any other attribute you have in your data, or colour the nodes according to their degree (Ranking > Degree).
 
 ![](./img/gephi7.png)
 
-Now you can adjust the node sizes — by default, they are all the same. To do this, click on the icon with circles (to the right of the palette) in the "Appearance" tab on the left panel. Here, you can also adjust the thickness of the edges — just switch from the "Nodes" tab to the "Edges" tab. The remaining two icons control the colour and size of the labels.
-
-![](./img/gephi8.png)
-
-![](./img/gephi18.png)
-
-After these adjustments, you should get a visualisation similar to this. You can zoom in and out using the mouse wheel (unfortunately, this might not work well with a touchpad). The magnifying glass button at the bottom of the toolbar to the left of the workspace centers the graph.
-
-![](./img/gephi9098.png)
-
-By default, the graph layout is random—meaning the position of nodes and their proximity to each other do not convey any meaning. Let's make the visualization more meaningful using a layout algorithm. The Layout menu is located in the bottom left corner. For example, the Fruchterman-Reingold algorithm arranges nodes in a circular pattern. Notice how nodes of the same colour, belonging to the same community, are naturally drawn closer together.
-
-![](./img/gephi9.png)
-
-Here’s another useful algorithm: Force Atlas. By the way, you don’t have to wait for the layout process to finish completely (spoiler: [it can run indefinitely](https://www.dropbox.com/s/ek84sjxsanm1rda/force_layout.mp4?dl=0)). If you're happy with the result, you can simply press "Stop".
+After changing the colours, your graph will look like this.
 
 ![](./img/gephi10.png)
 
-If you feel that the nodes are too close together, you can use the "Expand" function.
+In the bottom-right corner, you will see a small label "Palette." By clicking on it, you can choose the colours that the nodes will be coloured in. Default palettes have only 8 colours, but if you have a larger graph, you may want more colours. For such cases, Gephi provides the option to generate a palette: to have as many colours as there are different values for the selected attribute, simply uncheck "Limit number of colours," then click Generate and OK. I want to colour the nodes according to their community, and there are 40 communities in my graph (remember, we calculated the modularity?), so I will generate a palette with 40 colours. You can also choose the style of the palette (under the Presets parameter): pastel tones, dark colours, vivid colours, etc.
+
+![](./img/gephi8.png)
+
+![](./img/gephi9.png)
+
+
+Now you can adjust the node sizes — by default, they are all the same. To do this, click on the icon with circles (to the right of the palette) in the "Appearance" tab on the left panel. The remaining two icons control the colour and size of the labels.
 
 ![](./img/gephi11.png)
 
-The image has become more representative, but it clearly lacks node labels (they are called **labels**). There is a toolbar below the graph area for working with them. To make the labels appear, click on the black letter **T**; to the right, you can select the colour, font, and size.
+After these adjustments, you should get a visualisation similar to this. You can zoom in and out using the mouse wheel. The magnifying glass button at the bottom of the toolbar to the left of the workspace centers the graph.
 
 ![](./img/gephi12.png)
 
-After enabling labels, you will likely notice that they overlap. To avoid this, you need to run the Label Layout algorithm. The images below show the graph before and after applying the layout.
+By default, the graph layout is random—meaning the position of nodes and their proximity to each other do not convey any meaning. Let's make the visualization more meaningful using a layout algorithm. The Layout menu is located in the bottom left corner. For example, the Fruchterman-Reingold algorithm arranges nodes in a circular pattern. Notice how nodes of the same colour, belonging to the same community, are naturally drawn closer together.
 
 ![](./img/gephi13.png)
 
 ![](./img/gephi14.png)
 
-These are not all the tools available in Gephi, but this concludes our modifications to the graph's appearance. **NB!** Gephi does not have an "Undo" button (yes, that happens!), so be careful with changes to avoid having to redo everything from scratch.
-
-So far, we have been working in the "Overview" tab. The next tab, "Data Laboratory," allows you to view the data in a table format, add or remove columns and rows, edit or filter them using regular expressions, and export data to CSV (or import from CSV, which is very convenient).
-
 ![](./img/gephi15.png)
+
+Here’s another useful algorithm: Force Atlas. By the way, you don’t have to wait for the layout process to finish completely (spoiler: [it can run indefinitely](https://www.dropbox.com/s/ek84sjxsanm1rda/force_layout.mp4?dl=0)). If you're happy with the result, you can simply press "Stop".
+
+![](./img/gephi16.png)
+
+If you feel that the nodes are too close together, you can use the "Expansion" function in the "Layout" tab.
+
+![](./img/gephi19.png)
+
+![](./img/gephi20.png)
+
+### Labels
+
+The image has become more representative, but it clearly lacks node labels (they are called **labels**). There is a toolbar below the graph area for working with them. To make the labels appear, click on the black letter **T**; to the right, you can select the colour, font, and size.
+
+![](./img/gephi21.png)
+
+If you are using the Game of Thrones dataset, you will notice that nothing happens when you enable labels. This is because when we loaded the dataset, the first column with character names was interpreted as ID, but there was no additional "Label" column. To create it, we can copy the contents of the ID column into a new column called "Label" using the "Data Laboratory" tab.
+
+
+Now, if we go back to "Overview", the graph will look like that.
+
+![](./img/gephi26.png)
+
+After enabling labels, you will likely notice that they overlap. To avoid this, you need to run the "Label Adjust" algorithm. The images below show the graph before and after applying the layout.
+
+![](./img/gephi28.png)
+
+![](./img/gephi29.png)
+
+These are not all the tools available in Gephi, but this concludes our modifications to the graph's appearance. **NB! Gephi does not have an "Undo" button**, so be careful with changes to avoid having to redo everything from scratch.
 
 Finally, in the last tab, "Preview," you can see a nicely rendered version of the graph instead of the working version. The only thing to keep in mind is that you will need to enable the labels again, but this time using the toolbar on the left within this tab.
 
 If you're working with a large graph, it's best to uncheck the "Proportional size" option and slightly increase the font size. The rest of the label settings can be adjusted to your preference.
 
-![](./img/gephi17.png)
+![](./img/gephi31.png)
 
 Most likely, at first, you will just see a blank white field without the graph. To render it, you need to click the "Refresh" button at the bottom. The same applies after any changes—if you want to see the updates, you must click "Refresh" again.
 
-![](./img/gephi16.png)
+![](./img/gephi30.png)
 
-The final result is quite easy to interpret.
-If you use the Force Atlas layout, you can more clearly see the nodes that are closely connected to several communities.
-
-![](./img/graph0909.png)
 
 ### Exporting a graph
 The graph can be saved as a PNG or PDF. If you need a small file and detail is not important, it's better to choose PNG. However, if you want to examine the graph at any zoom level without losing quality, it's better to choose PDF. The graph can be exported in two ways: using the corresponding button in the bottom left corner of the "View" tab or via the "File > Export" menu.
 
-![](./img/gephi19.png)
+![](./img/gephi44.png)
 
 Additionally, you can export not just a static image, but a dynamic graph and upload it to the internet — just like the Macpherson poems study, remember? To do this, you need to install the Sigma Exporter plugin from the "Tools > Plugins > Available Plugins" menu and then restart Gephi. Don't forget to save your project ("File > Save Project" or Ctrl + S) before restarting, to avoid losing your work!
 
-![](./img/gephi20.png)
+![](./img/gephi33.png)
 
 After that, you can save the graph in Sigma by selecting "File > Export > Sigma.js template".
 
-![](./img/gephi21.png)
+![](./img/gephi34.png)
 
 In the window that appears, you need to specify the folder path where you want to export the project, as well as the details for the legend: the title and a brief description of the graph, as well as what the nodes, edges, and their colours represent.
 
-![](./img/gephi22png.png)
+![](./img/gephi35.png)
 
 After this, a folder named "network" will appear in the specified directory. All the files from this folder need to be uploaded to a new repository on GitHub. If you forgot to include something during the export, you can manually edit the `config.json` file by opening it in a text editor. Here is a list of the files that should be in your repository.
 
-![](./img/gh.png)
+![](./img/gephi37.png)
 
-Now that all the necessary files are in the repository, go to its settings and scroll down to the "GitHub Pages" section. Then, in the "Source" dropdown, select the "Master branch" and click the "Save" button. A green notification should appear with the address of your page in the format: [https://username.github.io/repository\_name](https://username.github.io/repository_name)
+Now that all the necessary files are in the repository, go to its settings and scroll down to the "GitHub Pages" section. Then, in the "Source" dropdown, select the "Master branch" and click the "Save" button. When you refresh the page, you will see the link to your interactive visualisation.
 
-![](./img/gh771.png)
+![](./img/gephi38.png)
 
-![](./img/gh677.png)
+![](./img/gephi39.png)
 
 It should look something like this. If you want, you can experiment with the `index.html file` to remove elements you don't like (for example, the empty space at the top of the legend).
 
+![](./img/gephi40.png)
 
-![](./img/gh6-0-.png)
 Please note that all selectors should be functional!
 
-![](./img/gh556.png)
+![](./img/gephi41.png)
 
-![](./img/пр7890-.png)
+![](gephi42.png)
 
-![](./img/gh888798.png)
+![](./img/gephi43.png)
 
 
