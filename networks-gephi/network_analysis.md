@@ -154,7 +154,7 @@ When we loaded the Game of Thrones dataset from `csv`, the first column with cha
 
 ![](./img/gephi22.png)
 
-![](./img/gephi23.png)
+![](./img/gephi23.png) &nbsp;&nbsp;&nbsp;&nbsp;
 ![](./img/gephi24.png)
 
 ![](./img/gephi25.png)
@@ -175,8 +175,7 @@ After changing the colours, your graph will look like this.
 
 In the bottom-right corner, you will see a small label "Palette." By clicking on it, you can choose the colours that the nodes will be coloured in. Default palettes have only 8 colours, but if you have a larger graph, you may want more colours. For such cases, Gephi provides the option to generate a palette: to have as many colours as there are different values for the selected attribute, simply uncheck "Limit number of colours," then click Generate and OK. I want to colour the nodes according to their community, and there are 40 communities in my graph (remember, we calculated the modularity?), so I will generate a palette with 40 colours. You can also choose the style of the palette (under the Presets parameter): pastel tones, dark colours, vivid colours, etc.
 
-![](./img/gephi8.png)
-
+![](./img/gephi8.png) &nbsp;&nbsp;&nbsp;&nbsp;
 ![](./img/gephi9.png)
 
 Now you can adjust the node sizes — by default, they are all the same. To do this, click on the icon with circles (to the right of the palette) in the "Appearance" tab on the left panel. The remaining two icons control the colour and size of the labels.
@@ -191,8 +190,7 @@ After these adjustments, you should get a visualisation similar to this. You can
 
 By default, the graph layout is random, i.e. the position of nodes and their proximity to each other do not convey any meaning. Let's make the visualization more meaningful using a layout algorithm. The Layout menu is located in the bottom left corner. For example, the Fruchterman-Reingold algorithm arranges nodes in a circular pattern. Notice how nodes of the same colour, belonging to the same community, are naturally drawn closer together.
 
-![](./img/gephi13.png)
-
+![](./img/gephi13.png)&nbsp;&nbsp;&nbsp;&nbsp;
 ![](./img/gephi14.png)
 
 ![](./img/gephi15.png)
@@ -271,9 +269,7 @@ It should look something like this. If you want, you can experiment with the `in
 
 Please note that all selectors should be functional!
 
-![](./img/gephi41.png)
-
-![](gephi42.png)
+![](./img/gephi42.png)
 
 ![](./img/gephi43.png)
 
