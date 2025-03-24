@@ -157,7 +157,7 @@ By default, the graph layout is random—meaning the position of nodes and their
 
 ![](./img/gephi15.png)
 
-Here’s another useful algorithm: Force Atlas. By the way, you don’t have to wait for the layout process to finish completely (spoiler: [it can run indefinitely](https://www.dropbox.com/s/ek84sjxsanm1rda/force_layout.mp4?dl=0)). If you're happy with the result, you can simply press "Stop".
+Here’s another useful algorithm: Force Atlas. By the way, you don’t have to wait for the layout process to finish completely (spoiler: [it can run indefinitely]([https://www.dropbox.com/s/ek84sjxsanm1rda/force_layout.mp4?dl=0](https://www.dropbox.com/scl/fi/3zoo9hvigtqiut8mi68gb/force_layout.mp4?rlkey=rh5hhxxlruunowc52mzueinjd&st=6doi3e5h&dl=0))). If you're happy with the result, you can simply press "Stop".
 
 ![](./img/gephi16.png)
 
