@@ -99,7 +99,7 @@ A co-occurrence network of the characters in the Game of Thrones ([./game_of_thr
 
 Graphs created in Gephi can not only be saved as images or PDFs but also published online (for example, on GitHub) using the Sigma plugin.  Here is [an example of an interactive graph](https://yosej.github.io/Ossian_Full_Network/) based on the Ossian cycle of epic poems by James Macpherson.
 
-Now, let's take a look at how to do all of this. For this workshop, we will be working with co-occurrence network of the characters in the first book of the _Game of Thrones_ series, which you can download [here](./data/game_of_thrones). Feel free to use your own data or any other dataset available in the `data` folder in this repository or from external resources.  Below are a few websites and repositories where you can find more interesting graph data to explore and practice:
+Now, let's take a look at how to do all of this. For this workshop, we will be working with co-occurrence network of the characters in the first book of the _Game of Thrones_ series, which you can download [from this repository](./data/game_of_thrones) or [from Kaggle](https://www.kaggle.com/datasets/mmmarchetti/game-of-thrones-dataset). Feel free to use your own data or any other dataset available in the `data` folder in this repository or from external resources.  Below are a few websites and repositories where you can find more interesting graph data to explore and practice:
 
 * [Network Data Repository](https://networkrepository.com/)
 * [Stanford Large Network Dataset Collection](https://snap.stanford.edu/data/)
