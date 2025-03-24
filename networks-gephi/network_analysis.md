@@ -99,11 +99,11 @@ A co-occurrence network of the characters in the _Game of Thrones_ ([./game_of_t
 
 [A chronology of Charles Dickens' novels](https://dhd2016.de/abstracts/EADH_01.html) built using the most frequent words in the text by Dr. Jan Rybicki.
 
-![](./img/image2.png)
+<img src="./img/image2.png" style="height: 300px; margin-right: 10px;"/>
 
 [A network of thematic connections in artworks from the Smithsonian American Art Museum, made between 1900 and 1935](https://matthewlincoln.net/2013/11/12/networks-of-the-smithsonian-american-art-museum.html), by Dr. Matthew Lincoln.
 
-![](https://sites.tufts.edu/digitalhumanities/files/2017/12/Screen-Shot-2017-12-20-at-10.28.02-AM.png)
+<img src="https://sites.tufts.edu/digitalhumanities/files/2017/12/Screen-Shot-2017-12-20-at-10.28.02-AM.png" style="height: 500px; margin-right: 10px;"/>
 
 [An air transportation network](https://www.martingrandjean.ch/connected-world-air-traffic-network/) based on [openflights.org](https://openflights.org/) data, where nodes represent airports, node sizes reflect the number of routes and colours roughly represent continents, by Dr. Martin Grandjean.
 
@@ -112,6 +112,8 @@ A co-occurrence network of the characters in the _Game of Thrones_ ([./game_of_t
 Graphs created in Gephi can also published online (for example, on GitHub) using the Sigma plugin. Here is [an example of an interactive graph](https://yosej.github.io/Ossian_Full_Network/), created by Dr. Joseph Yose, based on the Ossian cycle of epic poems by James Macpherson.
 
 ![](./img/ossian.png)
+
+### Data
 
 Now, let's take a look at how to do all of this. For this workshop, we will be working with co-occurrence network of the characters in the first book of the _Game of Thrones_ series, which you can download [from this repository](./data/game_of_thrones) or [from Kaggle](https://www.kaggle.com/datasets/mmmarchetti/game-of-thrones-dataset). Feel free to use your own data or any other dataset available in the `data` folder in this repository or from external resources.  Below are a few websites and repositories where you can find more interesting graph data to explore and practice:
 
@@ -132,11 +134,33 @@ After importing, Gephi will display a report with the graph's characteristics, a
 
 ![](./img/gephi3.png)
 
-Immediately after loading, the graph will look like this.
+### `Overview` tab
+
+Immediately after loading, the graph will look like this. **NB! Gephi does not have an "Undo" button**, so be careful with changes to avoid having to redo everything from scratch!
 
 ![](./img/gephi4.png)
 
-To make the graph more visually informative, you can adjust the colour and the size of the nodes and edges according to their attributes. Let's start by calculating the modularity to divide the graph into communities. This can be done in the "Statistics" tab on the workspace panel on the right.
+### `Data Laboratory` tab
+
+This tab is for manipulating source data, for example: 
+
+* adding nodes and edges manually adding, deleting and merging columns;
+* creating new columns based on regular expressions;
+* editing text and numbers in the cells;
+* importing and exporting data as a spreadsheet.
+
+When we loaded the Game of Thrones dataset from `csv`, the first column with character names was interpreted as ID, but there was no additional "Label" column that we will later need to display node labels. To create it, we can copy the contents of the ID column into a new column called "Label" in the "Data Laboratory". Additionally, you can replace all dashes with whitespaces in the "Label" column.
+
+![](./img/gephi22.png)
+
+![](./img/gephi23.png)
+![](./img/gephi24.png)
+
+![](./img/gephi25.png)
+
+### Adjusting node size and colour
+
+Now, let's go back to the "Overview" tab. To make the graph more visually informative, you can adjust the colour and the size of the nodes and edges according to their attributes. Let's start by calculating the modularity to divide the graph into communities. This can be done in the "Statistics" tab on the workspace panel on the right.
 
 ![](./img/gephi5.png)
 
@@ -154,7 +178,6 @@ In the bottom-right corner, you will see a small label "Palette." By clicking on
 
 ![](./img/gephi9.png)
 
-
 Now you can adjust the node sizes — by default, they are all the same. To do this, click on the icon with circles (to the right of the palette) in the "Appearance" tab on the left panel. The remaining two icons control the colour and size of the labels.
 
 ![](./img/gephi11.png)
@@ -163,7 +186,9 @@ After these adjustments, you should get a visualisation similar to this. You can
 
 ![](./img/gephi12.png)
 
-By default, the graph layout is random—meaning the position of nodes and their proximity to each other do not convey any meaning. Let's make the visualization more meaningful using a layout algorithm. The Layout menu is located in the bottom left corner. For example, the Fruchterman-Reingold algorithm arranges nodes in a circular pattern. Notice how nodes of the same colour, belonging to the same community, are naturally drawn closer together.
+### Layout
+
+By default, the graph layout is random, i.e. the position of nodes and their proximity to each other do not convey any meaning. Let's make the visualization more meaningful using a layout algorithm. The Layout menu is located in the bottom left corner. For example, the Fruchterman-Reingold algorithm arranges nodes in a circular pattern. Notice how nodes of the same colour, belonging to the same community, are naturally drawn closer together.
 
 ![](./img/gephi13.png)
 
@@ -183,12 +208,9 @@ If you feel that the nodes are too close together, you can use the "Expansion" f
 
 ### Labels
 
-The image has become more representative, but it clearly lacks node labels (they are called **labels**). There is a toolbar below the graph area for working with them. To make the labels appear, click on the black letter **T**; to the right, you can select the colour, font, and size.
+The image has become more representative, but it clearly lacks node **labels**. There is a toolbar below the graph area for working with them. To make the labels appear, click on the black letter **T**; to the right, you can select the colour, font, and size.
 
 ![](./img/gephi21.png)
-
-If you are using the Game of Thrones dataset, you will notice that nothing happens when you enable labels. This is because when we loaded the dataset, the first column with character names was interpreted as ID, but there was no additional "Label" column. To create it, we can copy the contents of the ID column into a new column called "Label" using the "Data Laboratory" tab.
-
 
 Now, if we go back to "Overview", the graph will look like that.
 
@@ -200,7 +222,7 @@ After enabling labels, you will likely notice that they overlap. To avoid this, 
 
 ![](./img/gephi29.png)
 
-These are not all the tools available in Gephi, but this concludes our modifications to the graph's appearance. **NB! Gephi does not have an "Undo" button**, so be careful with changes to avoid having to redo everything from scratch.
+### `Preview` tab
 
 Finally, in the last tab, "Preview," you can see a nicely rendered version of the graph instead of the working version. The only thing to keep in mind is that you will need to enable the labels again, but this time using the toolbar on the left within this tab.
 
@@ -212,13 +234,15 @@ Most likely, at first, you will just see a blank white field without the graph. 
 
 ![](./img/gephi30.png)
 
-
 ### Exporting a graph
-The graph can be saved as a PNG or PDF. If you need a small file and detail is not important, it's better to choose PNG. However, if you want to examine the graph at any zoom level without losing quality, it's better to choose PDF. The graph can be exported in two ways: using the corresponding button in the bottom left corner of the "View" tab or via the "File > Export" menu.
+
+#### Static
+The graph can be saved as a PNG, SVG or PDF. If you need a small file and detail is not important, it's better to choose PNG. However, if you want to examine the graph at any zoom level without losing quality, it's better to choose PDF or SVG. The graph can be exported in two ways: using the corresponding button in the bottom left corner of the "View" tab or via the "File > Export" menu.
 
 ![](./img/gephi44.png)
 
-Additionally, you can export not just a static image, but a dynamic graph and upload it to the internet — just like the Macpherson poems study, remember? To do this, you need to install the Sigma Exporter plugin from the "Tools > Plugins > Available Plugins" menu and then restart Gephi. Don't forget to save your project ("File > Save Project" or Ctrl + S) before restarting, to avoid losing your work!
+#### Dynamic 
+Additionally, you can export a dynamic graph and upload it online. To do this, you need to install the Sigma Exporter plugin from the "Tools > Plugins > Available Plugins" menu and then restart Gephi. Don't forget to save your project ("File > Save Project" or Ctrl + S) before restarting, to avoid losing your work!
 
 ![](./img/gephi33.png)
 
@@ -252,4 +276,4 @@ Please note that all selectors should be functional!
 
 ![](./img/gephi43.png)
 
-
+## Further reading
